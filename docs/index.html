@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>English Practice — Dashboard</title>
+  <style>
+    *{box-sizing:border-box;margin:0;padding:0}
+    body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;background:#f0f4f8;color:#1a1a1a;padding:24px}
+    h1{font-size:1.5em;color:#2c3e50;margin-bottom:4px}
+    .subtitle{color:#888;font-size:0.85em;margin-bottom:24px}
+    .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:16px;margin-bottom:24px}
+    .card{background:#fff;border-radius:10px;padding:20px;box-shadow:0 1px 4px rgba(0,0,0,.08)}
+    .card.full{grid-column:1/-1}
+    .card h2{font-size:0.85em;color:#888;text-transform:uppercase;letter-spacing:.05em;margin-bottom:12px}
+    .big-num{font-size:2.8em;font-weight:700;color:#2c3e50;line-height:1}
+    .big-label{font-size:0.75em;color:#666;margin-top:4px}
+    .level-bar-track{background:#e0e0e0;border-radius:4px;height:8px;margin-top:10px}
+    .level-bar-fill{height:8px;border-radius:4px;background:#3498db;transition:width .5s}
+    .level-hint{font-size:0.7em;color:#888;margin-top:4px}
+    table{border-collapse:collapse;width:100%;font-size:0.85em}
+    th{background:#e3f2fd;padding:8px 10px;text-align:left;border:1px solid #ddd;font-weight:600}
+    td{padding:7px 10px;border:1px solid #ddd}
+    tr:nth-child(even){background:#f9f9f9}
+    ul{padding-left:18px;font-size:0.9em;line-height:2}
+    .footer{margin-top:32px;font-size:0.75em;color:#aaa;text-align:center}
+  </style>
+</head>
+<body>
+  <h1>English Practice — Progress Dashboard</h1>
+  <p class="subtitle">Last updated: 2026-07-01 00:34 UTC · Last session: 2026-07-01</p>
+
+  <div class="grid">
+    <div class="card">
+      <h2>Writing Level</h2>
+      <div class="big-num">1<span style="font-size:.4em;color:#999">/5</span></div>
+      <div class="big-label">Beginner</div>
+      <div class="level-bar-track"><div class="level-bar-fill" style="width:20%"></div></div>
+      <div class="level-hint">Progress toward next level: 0% (based on last 5 sessions avg)</div>
+    </div>
+
+    <div class="card">
+      <h2>Reading Level</h2>
+      <div class="big-num">1<span style="font-size:.4em;color:#999">/5</span></div>
+      <div class="big-label">B2</div>
+      <div class="level-bar-track"><div class="level-bar-fill" style="width:20%"></div></div>
+    </div>
+
+    <div class="card">
+      <h2>Sessions Completed</h2>
+      <div class="big-num">1</div>
+      <div class="big-label">total practice sessions</div>
+    </div>
+
+    <div class="card">
+      <h2>Avg Score (last 5)</h2>
+      <div class="big-num">
+        —
+        <span style="font-size:.4em;color:#999">/5</span>
+      </div>
+      <div class="big-label">grammar · semantics · fluency</div>
+    </div>
+
+    
+
+    <div class="card full">
+      <h2>Score History</h2>
+      <p style="color:#888;font-size:.9em">No evaluated sessions yet.</p>
+    </div>
+
+    <div class="card">
+      <h2>Recurring Errors to Watch</h2>
+      <ul><li>None identified yet — keep writing!</li></ul>
+    </div>
+
+    <div class="card full">
+      <h2>Topics Covered (last 20)</h2>
+      <table>
+        <tr><th>Date</th><th>Area</th><th>Subtopic</th></tr>
+        <tr><td>2026-07-01</td><td>Data Science</td><td>Feature Engineering</td></tr>
+      </table>
+    </div>
+  </div>
+
+  <div class="footer">English Practice Agent · Auto-generated · Private</div>
+  
+</body>
+</html>
