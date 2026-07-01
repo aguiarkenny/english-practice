@@ -1,0 +1,45 @@
+name: Daily English Practice
+
+on:
+  schedule:
+    # 07:00 BRT = 10:00 UTC (BRT is UTC-3)
+    - cron: "0 10 * * 1-5"
+  workflow_dispatch: # allows manual trigger from GitHub UI
+
+jobs:
+  generate-and-send:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write  # needed to commit state.json back
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: pip install anthropic
+
+      - name: Generate and send daily practice
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          SMTP_HOST: smtp.gmail.com
+          SMTP_PORT: "587"
+          SMTP_USER: ${{ secrets.SMTP_USER }}
+          SMTP_PASSWORD: ${{ secrets.SMTP_PASSWORD }}
+          RECIPIENT_EMAIL: ${{ secrets.RECIPIENT_EMAIL }}
+        run: python scripts/generate_and_send.py
+
+      - name: Commit updated state
+        run: |
+          git config user.name "english-practice-bot"
+          git config user.email "bot@users.noreply.github.com"
+          git add state/state.json
+          git diff --cached --quiet || git commit -m "chore: update practice state [skip ci]"
+          git push
