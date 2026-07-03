@@ -1,10 +1,23 @@
 {
   "reading_level": 1,
   "writing_level": 1,
-  "session_count": 0,
-  "last_session_date": null,
-  "topic_history": [],
+  "session_count": 1,
+  "last_session_date": "2026-07-03",
+  "topic_history": [
+    {
+      "topic": "data science",
+      "subtopic": "feature engineering",
+      "date": "2026-07-03"
+    }
+  ],
   "recent_writing_scores": [],
   "recurring_errors": [],
-  "pending_evaluation": null
+  "pending_evaluation": {
+    "session_num": 1,
+    "topic": "data science",
+    "subtopic": "feature engineering",
+    "article": "**Feature Engineering: The Hidden Work Behind Accurate Models**\n\nIn machine learning, the algorithm often gets the credit. When a model predicts customer churn with 92% accuracy, teams celebrate the neural network or the gradient boosting technique. But experienced data scientists know a quieter truth: the quality of your features matters more than the choice of your model.\n\nFeature engineering is the process of transforming raw data into inputs that machine learning models can use effectively. It sits between data collection and model training, and it is frequently the most time-consuming part of a data science project. According to many industry surveys, data scientists spend up to 60% of their time on data preparation and feature engineering tasks.\n\nConsider a practical example. Suppose you are building a model to predict which sales representatives will miss their quarterly targets. Your raw data includes daily activity logs — number of calls made, emails sent, and meetings booked. A basic model might use these numbers directly. But a skilled data scientist goes further. They might calculate the *ratio* of meetings to calls, which captures conversion efficiency. They might create a *rolling 30-day average* of activity, which smooths out weekly variation. They might also add a binary flag indicating whether the representative recently changed their territory. Each of these new variables is an engineered feature. Each one gives the model a sharper lens to see the problem.\n\nThere are several common techniques in feature engineering. **Normalization** rescales numerical variables so that large values do not dominate the model unfairly. **Encoding** converts categorical variables — like product category or region — into numerical formats the algorithm can process. **Lag features** use past values to help predict future outcomes, which is especially useful in time series problems. **Interaction features** combine two variables to capture relationships that neither variable expresses alone.\n\nDomain knowledge plays a critical role here. A data scientist who understands the business will create better features than one who treats the problem as purely statistical. For example, in revenue operations, knowing that deals that stall for more than 45 days rarely close is valuable domain knowledge. A feature capturing deal age relative to that threshold may be far more predictive than raw deal age alone.\n\nThe risk of poor feature engineering is not just lower accuracy. It can also introduce bias. If a feature inadvertently encodes a protected characteristic — like neighborhood as a proxy for race — the model can produce unfair outcomes. Thoughtful feature selection and careful auditing are therefore ethical responsibilities, not just technical ones.\n\nIn short, feature engineering is where data science meets deep domain understanding. It is less glamorous than building a sophisticated model, but it is often where the real competitive advantage is created.",
+    "writing_task": "Write **2–3 sentences** summarizing the main argument of the article. In your sentences, make sure you answer these two questions:\n\n1. **What is feature engineering, and why does it matter more than people usually think?**\n2. **What is one real-world consequence of doing it poorly?**\n\nTry to use your own words. Do not copy sentences directly from the text.",
+    "date": "2026-07-03"
+  }
 }
