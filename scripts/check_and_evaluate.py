@@ -144,8 +144,8 @@ def find_reply_in_inbox(session_num: int, subtopic: str) -> str | None:
     mail.login(smtp_user, smtp_password)
     mail.select("inbox")
 
-    # Search for replies by subject
-    search_term = f'SUBJECT "{reply_subject}"'
+    # Search only UNSEEN replies to avoid reprocessing already-evaluated responses
+    search_term = f'UNSEEN SUBJECT "{reply_subject}"'
     status, data = mail.search(None, search_term)
 
     if status != "OK" or not data[0]:
@@ -157,10 +157,14 @@ def find_reply_in_inbox(session_num: int, subtopic: str) -> str | None:
     latest_id = msg_ids[-1]
 
     status, msg_data = mail.fetch(latest_id, "(RFC822)")
-    mail.logout()
 
     if status != "OK":
+        mail.logout()
         return None
+
+    # Mark as read so it is never processed again
+    mail.store(latest_id, "+FLAGS", "\\Seen")
+    mail.logout()
 
     raw = msg_data[0][1]
     msg = email.message_from_bytes(raw)

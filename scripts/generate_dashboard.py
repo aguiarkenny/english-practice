@@ -54,14 +54,14 @@ def build_dashboard(state: dict) -> str:
     for s in reversed(all_scores):
         avg = s["avg"]
         color = "#2e7d32" if avg >= 4.0 else "#c62828" if avg < 3.0 else "#1565c0"
-        table_rows += f"""
-        <tr>
-          <td>{s['date']}</td>
-          <td>{s['scores'].get('grammar','–')}</td>
-          <td>{s['scores'].get('semantics','–')}</td>
-          <td>{s['scores'].get('fluency','–')}</td>
-          <td style="color:{color};font-weight:bold">{avg:.1f}</td>
-        </tr>"""
+        d = s["date"]
+        g = s["scores"].get("grammar", "–")
+        sem = s["scores"].get("semantics", "–")
+        fl = s["scores"].get("fluency", "–")
+        table_rows += (
+            f'<tr><td>{d}</td><td>{g}</td><td>{sem}</td><td>{fl}</td>'
+            f'<td style="color:{color};font-weight:bold">{avg:.1f}</td></tr>'
+        )
 
     errors_html = "".join(f"<li>{e}</li>" for e in errors) or "<li>None identified yet — keep writing!</li>"
 
@@ -74,17 +74,24 @@ def build_dashboard(state: dict) -> str:
     if all_scores:
         recent5 = [s["avg"] for s in all_scores[-5:]]
         progress_toward_next = min(100, int(sum(recent5) / len(recent5) / 4.0 * 100))
+        avg_last5_str = f"{sum(s['avg'] for s in all_scores[-5:]) / len(all_scores[-5:]):.1f}"
     else:
         progress_toward_next = 0
+        avg_last5_str = "—"
+
+    score_history_html = (
+        "<p style=\"color:#888;font-size:.9em\">No evaluated sessions yet.</p>"
+        if not all_scores
+        else f"<table><tr><th>Date</th><th>Grammar</th><th>Semantics</th><th>Fluency</th><th>Average</th></tr>{table_rows}</table>"
+    )
 
     generated_at = datetime.now().strftime("%Y-%m-%d %H:%M UTC")
 
     no_chart = len(all_scores) == 0
-    chart_section = "" if no_chart else f"""
-    <div class="card full">
-      <h2>Score Trend</h2>
-      <canvas id="scoreChart" height="80"></canvas>
-    </div>"""
+    chart_section = "" if no_chart else (
+        '<div class="card full"><h2>Score Trend</h2>'
+        '<canvas id="scoreChart" height="80"></canvas></div>'
+    )
 
     chart_script = "" if no_chart else f"""
     <script src="https://cdn.jsdelivr.net/npm/chart.js@4/dist/chart.umd.min.js"></script>
@@ -167,7 +174,7 @@ def build_dashboard(state: dict) -> str:
     <div class="card">
       <h2>Avg Score (last 5)</h2>
       <div class="big-num">
-        {f"{sum(s['avg'] for s in all_scores[-5:])/len(all_scores[-5:]):.1f}" if all_scores else "—"}
+        {avg_last5_str}
         <span style="font-size:.4em;color:#999">/5</span>
       </div>
       <div class="big-label">grammar · semantics · fluency</div>
@@ -177,11 +184,7 @@ def build_dashboard(state: dict) -> str:
 
     <div class="card full">
       <h2>Score History</h2>
-      {"<p style='color:#888;font-size:.9em'>No evaluated sessions yet.</p>" if not all_scores else f"""
-      <table>
-        <tr><th>Date</th><th>Grammar</th><th>Semantics</th><th>Fluency</th><th>Average</th></tr>
-        {table_rows}
-      </table>"""}
+      {score_history_html}
     </div>
 
     <div class="card">

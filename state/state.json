@@ -1,23 +1,10 @@
 {
   "reading_level": 1,
   "writing_level": 1,
-  "session_count": 1,
-  "last_session_date": "2026-07-01",
-  "topic_history": [
-    {
-      "topic": "data science",
-      "subtopic": "feature engineering",
-      "date": "2026-07-01"
-    }
-  ],
+  "session_count": 0,
+  "last_session_date": null,
+  "topic_history": [],
   "recent_writing_scores": [],
   "recurring_errors": [],
-  "pending_evaluation": {
-    "session_num": 1,
-    "topic": "data science",
-    "subtopic": "feature engineering",
-    "article": "**Turning Raw Data Into Signals: The Art of Feature Engineering**\n\nIn machine learning, the quality of your model depends heavily on the quality of your inputs. Raw data rarely comes ready to use. Feature engineering is the process of transforming raw data into meaningful inputs — called features — that help a model learn patterns more effectively. It is one of the most impactful steps in any data science workflow.\n\nConsider a simple example. Imagine you are building a model to predict whether a sales rep will close a deal. Your raw data might include a timestamp of the first customer contact. That timestamp alone tells the model very little. But if you engineer a new feature — say, \"days between first contact and last follow-up\" — suddenly you have a signal that correlates with deal outcomes. The transformation revealed information that was hidden in the original data.\n\nFeature engineering takes many forms. **Binning** is one common technique. Instead of using a customer's exact age, you group ages into categories: 18–25, 26–35, and so on. This can reduce noise and help the model generalize better. **Interaction features** are another approach. You multiply or combine two variables to capture relationships between them. For example, multiplying \"number of calls made\" by \"average call duration\" might better represent a sales rep's engagement than either variable alone.\n\nTime-based features are especially powerful in business contexts. From a single date column, you can extract the day of the week, the week of the month, whether the date falls near a quarter-end, or how many days remain in a sales cycle. Each of these new features can dramatically improve model performance because they encode real business logic.\n\nText data also benefits from engineering. A customer support ticket contains unstructured words. But you can engineer features like \"ticket length,\" \"number of exclamation marks,\" or \"presence of the word urgent.\" These simple transformations help a model understand urgency or complexity without reading every word the way a human would.\n\nOne important principle in feature engineering is domain knowledge. A data scientist who understands the business will almost always outperform one who applies only statistical techniques. Knowing that sales close rates drop in August, or that contracts signed on Fridays tend to get delayed, allows you to encode those insights directly into your features.\n\nFeature engineering is not a one-time task. It is an iterative process. You test a feature, measure its impact on model performance, and revise or discard it. Tools like feature importance scores in tree-based models help you identify which engineered features are actually contributing to predictions.\n\nIn short, great feature engineering bridges the gap between raw data and real-world business intelligence. It is where domain expertise meets technical creativity — and often where the best models are won or lost.",
-    "writing_task": "**Your task:** The article explains that time-based features can be engineered from a single date column. In **2–3 sentences**, describe this concept in your own words. Try to include a specific example of a time-based feature and explain **why** it might be useful for a business model. Avoid copying sentences directly from the article.\n\n**Sentence starter to help you begin (optional):**\n*\"When we have a date column in our dataset, we can extract...\"*",
-    "date": "2026-07-01"
-  }
+  "pending_evaluation": null
 }
