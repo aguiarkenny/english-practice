@@ -30,14 +30,21 @@
       "date": "2026-07-08"
     }
   ],
-  "recent_writing_scores": [],
-  "recurring_errors": [],
-  "pending_evaluation": {
-    "session_num": 5,
-    "topic": "data science",
-    "subtopic": "causal inference",
-    "article": "**Why \"It Worked\" Is Not Enough: A Practical Guide to Causal Inference in Business**\n\nEvery data scientist has heard this request: \"We ran a promotion last quarter and sales went up 15%. It worked. Do it again.\" The logic feels solid. But is the promotion actually responsible for the increase? Or did sales go up because of seasonality, a competitor's product launch failure, or a general market trend? This is exactly the problem that causal inference tries to solve.\n\nCausal inference is the practice of determining whether one variable *actually causes* a change in another — not just whether they move together. In statistics, we call the simpler relationship *correlation*. Correlation is easy to find. Causation is much harder to prove.\n\nConsider a real-world scenario. A SaaS company wants to know if sending a personalized onboarding email increases 30-day retention. They look at their data and notice that users who received the email retained at a 72% rate, compared to 58% for those who did not. A 14-point difference looks impressive. However, there is a hidden problem: the email was only sent to users who completed at least three product actions in their first 24 hours. Those users were already more engaged. The email did not create engagement — it *followed* it. This type of problem is called **selection bias**.\n\nTo avoid this trap, data scientists use several techniques. The gold standard is the **randomized controlled trial (RCT)**, often called an A/B test in industry. In an RCT, users are randomly assigned to receive the treatment or not. Random assignment breaks the link between pre-existing characteristics and the treatment, making the comparison fair.\n\nBut RCTs are not always possible. Sometimes it is unethical, too expensive, or simply too late to run one. In those cases, data scientists use **observational methods**. One popular technique is **propensity score matching**. The idea is straightforward: find users in the control group who look very similar to users in the treatment group, based on measurable characteristics like age, usage history, or company size. Then compare only those matched pairs. This approach reduces — but does not fully eliminate — selection bias.\n\nAnother powerful method is the **difference-in-differences (DiD)** design. Imagine a sales compensation change was rolled out in one region but not others. DiD compares the change in outcomes in the treated region against the change in untreated regions over the same time period. If both regions were trending similarly before the change, the difference after the change is a reasonable estimate of the treatment effect.\n\nNone of these methods is perfect. Causal inference always requires assumptions, and those assumptions must be clearly stated and honestly evaluated. The goal is not certainty — it is *credibility*. A well-designed causal analysis gives business leaders something more valuable than a correlation: a defensible reason to act.",
-    "writing_task": "Read the section about the SaaS company's onboarding email example carefully. Then write **2–3 sentences** answering the following:\n\n- What did you find most interesting about this example?\n- Why is selection bias a practical problem — not just a statistical one — for data scientists working in business?\n\nUse your own words. You do not need to use complex grammar. Focus on being clear and specific. Aim for complete sentences with a subject, verb, and object.\n\n**Starter phrase you may use (optional):**\n*\"I found this example interesting because...\"*",
-    "date": "2026-07-08"
-  }
+  "recent_writing_scores": [
+    {
+      "date": "2026-07-09",
+      "scores": {
+        "grammar": 2,
+        "semantics": 4,
+        "fluency": 2
+      },
+      "avg": 2.67
+    }
+  ],
+  "recurring_errors": [
+    "1. **False cognate \"realizar\" → \"realize\"**: Student wrote \"treatments realized\" meaning *carried out/conducted*. This pattern (using \"realize\" to mean *executar/realizar*) is extremely common among Brazilian writers and should be tracked and corrected consistently.",
+    "2. **Portuguese word order in complex comparisons**: Constructions like \"how harder than X the Y is\" reflect direct L1 syntax transfer. Student needs to practice English comparative clause structure (e.g., \"how much harder Y is than X\").",
+    "3. **Calque transitions from Portuguese**: \"By consequence\" (← *por consequência*) is part of a broader pattern of translating connective phrases word-for-word. Other likely forms to watch: \"in function of,\" \"in the measure that,\" \"till\" (for *até*). Student should build a reference list of correct English transitions."
+  ],
+  "pending_evaluation": null
 }

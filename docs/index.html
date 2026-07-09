@@ -28,7 +28,7 @@
 </head>
 <body>
   <h1>English Practice — Progress Dashboard</h1>
-  <p class="subtitle">Last updated: 2026-07-08 23:52 UTC · Last session: 2026-07-08</p>
+  <p class="subtitle">Last updated: 2026-07-09 01:27 UTC · Last session: 2026-07-08</p>
 
   <div class="grid">
     <div class="card">
@@ -36,7 +36,7 @@
       <div class="big-num">1<span style="font-size:.4em;color:#999">/5</span></div>
       <div class="big-label">Beginner</div>
       <div class="level-bar-track"><div class="level-bar-fill" style="width:20%"></div></div>
-      <div class="level-hint">Progress toward next level: 0% (based on last 5 sessions avg)</div>
+      <div class="level-hint">Progress toward next level: 66% (based on last 5 sessions avg)</div>
     </div>
 
     <div class="card">
@@ -55,22 +55,22 @@
     <div class="card">
       <h2>Avg Score (last 5)</h2>
       <div class="big-num">
-        —
+        2.7
         <span style="font-size:.4em;color:#999">/5</span>
       </div>
       <div class="big-label">grammar · semantics · fluency</div>
     </div>
 
-    
+    <div class="card full"><h2>Score Trend</h2><canvas id="scoreChart" height="80"></canvas></div>
 
     <div class="card full">
       <h2>Score History</h2>
-      <p style="color:#888;font-size:.9em">No evaluated sessions yet.</p>
+      <table><tr><th>Date</th><th>Grammar</th><th>Semantics</th><th>Fluency</th><th>Average</th></tr><tr><td>2026-07-09</td><td>2</td><td>4</td><td>2</td><td style="color:#c62828;font-weight:bold">2.7</td></tr></table>
     </div>
 
     <div class="card">
       <h2>Recurring Errors to Watch</h2>
-      <ul><li>None identified yet — keep writing!</li></ul>
+      <ul><li>1. **False cognate "realizar" → "realize"**: Student wrote "treatments realized" meaning *carried out/conducted*. This pattern (using "realize" to mean *executar/realizar*) is extremely common among Brazilian writers and should be tracked and corrected consistently.</li><li>2. **Portuguese word order in complex comparisons**: Constructions like "how harder than X the Y is" reflect direct L1 syntax transfer. Student needs to practice English comparative clause structure (e.g., "how much harder Y is than X").</li><li>3. **Calque transitions from Portuguese**: "By consequence" (← *por consequência*) is part of a broader pattern of translating connective phrases word-for-word. Other likely forms to watch: "in function of," "in the measure that," "till" (for *até*). Student should build a reference list of correct English transitions.</li></ul>
     </div>
 
     <div class="card full">
@@ -84,5 +84,27 @@
 
   <div class="footer">English Practice Agent · Auto-generated · Private</div>
   
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4/dist/chart.umd.min.js"></script>
+    <script>
+    const ctx = document.getElementById('scoreChart').getContext('2d');
+    new Chart(ctx, {
+      type: 'line',
+      data: {
+        labels: ["2026-07-09"],
+        datasets: [
+          { label: 'Grammar', data: [2], borderColor: '#e53935', tension: 0.3, fill: false },
+          { label: 'Semantics', data: [4], borderColor: '#1e88e5', tension: 0.3, fill: false },
+          { label: 'Fluency', data: [2], borderColor: '#43a047', tension: 0.3, fill: false },
+          { label: 'Average', data: [2.67], borderColor: '#6d4c41', borderWidth: 2, borderDash: [5,3], tension: 0.3, fill: false },
+        ]
+      },
+      options: {
+        scales: {
+          y: { min: 0, max: 5, ticks: { stepSize: 1 } }
+        },
+        plugins: { legend: { position: 'bottom' } }
+      }
+    });
+    </script>
 </body>
 </html>
