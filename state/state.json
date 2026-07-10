@@ -44,19 +44,24 @@
         "fluency": 2
       },
       "avg": 2.67
+    },
+    {
+      "date": "2026-07-10",
+      "scores": {
+        "grammar": 3,
+        "semantics": 1,
+        "fluency": 3
+      },
+      "avg": 2.33
     }
   ],
   "recurring_errors": [
     "1. **False cognate \"realizar\" → \"realize\"**: Student wrote \"treatments realized\" meaning *carried out/conducted*. This pattern (using \"realize\" to mean *executar/realizar*) is extremely common among Brazilian writers and should be tracked and corrected consistently.",
     "2. **Portuguese word order in complex comparisons**: Constructions like \"how harder than X the Y is\" reflect direct L1 syntax transfer. Student needs to practice English comparative clause structure (e.g., \"how much harder Y is than X\").",
-    "3. **Calque transitions from Portuguese**: \"By consequence\" (← *por consequência*) is part of a broader pattern of translating connective phrases word-for-word. Other likely forms to watch: \"in function of,\" \"in the measure that,\" \"till\" (for *até*). Student should build a reference list of correct English transitions."
+    "3. **Calque transitions from Portuguese**: \"By consequence\" (← *por consequência*) is part of a broader pattern of translating connective phrases word-for-word. Other likely forms to watch: \"in function of,\" \"in the measure that,\" \"till\" (for *até*). Student should build a reference list of correct English transitions.",
+    "**False cognate \"once\" used to mean \"since/because\"** — likely carried over from Portuguese \"uma vez que\"; needs consistent correction.",
+    "**\"Premises\" used instead of \"assumptions\"** — a recurring risk for Brazilian Portuguese speakers; the word \"premissa\" maps to \"assumption\" in business/data English contexts.",
+    "**Preposition \"through\" misused to translate \"através de\"** — appears when describing scope or distribution across groups; correct alternatives are \"among,\" \"across,\" or \"within.\""
   ],
-  "pending_evaluation": {
-    "session_num": 6,
-    "topic": "data science",
-    "subtopic": "time series forecasting",
-    "article": "**When the Past Predicts the Future: Time Series Forecasting in Business**\n\nEvery business runs on patterns. Retail sales spike in December. Website traffic drops on weekends. Energy consumption climbs in the afternoon. These patterns repeat — and time series forecasting is the tool that helps organizations turn those repetitions into reliable predictions.\n\nA time series is simply a sequence of data points collected over time. Think of daily sales revenue recorded for 24 months, or hourly temperature readings from a sensor. The goal of forecasting is to look at that historical sequence and estimate what comes next.\n\nIn practice, most time series contain several overlapping components. The **trend** shows the general direction — is revenue growing or declining over months and years? The **seasonality** captures regular cycles, like higher demand every summer or every Friday. And **noise** represents random fluctuations that cannot be predicted. Good forecasting models separate these components and learn from the structured ones.\n\nClassical methods like ARIMA — short for AutoRegressive Integrated Moving Average — have been used for decades. ARIMA works well when the data is relatively stable and follows linear patterns. For example, a logistics company might use ARIMA to forecast weekly shipment volumes based on the previous 18 months of data.\n\nHowever, many real-world time series are more complex. A retail chain selling across dozens of markets needs to forecast thousands of product-location combinations simultaneously. In these cases, machine learning models — especially gradient boosting methods like XGBoost or LightGBM — often outperform classical approaches. These models can incorporate external variables, called **exogenous features**, such as holidays, weather, or promotional events, which significantly improve accuracy.\n\nMore recently, deep learning architectures like LSTM networks and the Transformer-based model N-BEATS have shown strong results on large datasets. Meta's open-source library **Prophet**, for instance, became widely adopted in business settings because it handles seasonality and holidays automatically and is relatively easy to configure.\n\nAccuracy matters, but it is never the only metric. In revenue operations, a forecast that is directionally correct but slightly off can still drive good decisions. In supply chain planning, even a 10% error in demand forecasting can lead to costly overstocking or stockouts. Choosing the right model always depends on the business context, the volume of data available, and the cost of being wrong.\n\nOne common mistake is treating forecasting as a one-time task. In reality, models must be retrained and monitored continuously. A model trained before a major market disruption — like a pandemic or a sudden competitor entry — can become dangerously outdated within weeks. Building a forecasting system means building a process, not just running a script.\n\nThe most effective teams combine statistical rigor with business judgment. The model provides a baseline prediction. Human expertise adjusts it when context changes.",
-    "writing_task": "Write **2–3 sentences** summarizing the main argument of the article. Your sentences should answer these questions:\n\n- What is time series forecasting and why does it matter for businesses?\n- What is one important limitation or challenge the article mentions?\n\nUse your own words. Do not copy sentences directly from the text. Try to use at least one term from the Vocabulary Spotlight section below.\n\n**Example sentence starter (optional):** *\"The article argues that time series forecasting...\"*",
-    "date": "2026-07-10"
-  }
+  "pending_evaluation": null
 }
