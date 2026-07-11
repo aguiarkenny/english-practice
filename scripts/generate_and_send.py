@@ -229,6 +229,11 @@ When done, run: python scripts/submit_response.py
 def main():
     state = load_state()
 
+    # Prevent duplicate sessions on the same day (e.g. re-runs after a failed commit)
+    if state.get("last_session_date") == str(date.today()):
+        print(f"Session already generated today ({date.today()}). Skipping.")
+        return
+
     topic, subtopic = pick_topic(state)
     writing_task = get_writing_task_prompt(state["writing_level"])
     include_errors = should_include_error_review(state)

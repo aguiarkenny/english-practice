@@ -119,6 +119,29 @@ def build_report_html(state: dict, week_scores: list[dict], insight: str) -> tup
 
     errors_html = "".join(f"<li>{e}</li>" for e in errors) if errors else "<li>None identified yet.</li>"
 
+    # Pre-compute bar widths to avoid f-string nesting issues
+    grammar_pct = f"{avg_grammar / 5 * 100:.0f}"
+    semantics_pct = f"{avg_semantics / 5 * 100:.0f}"
+    fluency_pct = f"{avg_fluency / 5 * 100:.0f}"
+    grammar_str = f"{avg_grammar:.1f}"
+    semantics_str = f"{avg_semantics:.1f}"
+    fluency_str = f"{avg_fluency:.1f}"
+
+    if n_sessions == 0:
+        scores_section_html = "<p style='color:#888'>No evaluated sessions this week.</p>"
+    else:
+        scores_section_html = (
+            f'<div class="score-bar"><span style="width:80px">Grammar</span>'
+            f'<div class="bar-track"><div class="bar-fill" style="width:{grammar_pct}%"></div></div>'
+            f'<span>{grammar_str}</span></div>'
+            f'<div class="score-bar"><span style="width:80px">Semantics</span>'
+            f'<div class="bar-track"><div class="bar-fill" style="width:{semantics_pct}%"></div></div>'
+            f'<span>{semantics_str}</span></div>'
+            f'<div class="score-bar"><span style="width:80px">Fluency</span>'
+            f'<div class="bar-track"><div class="bar-fill" style="width:{fluency_pct}%"></div></div>'
+            f'<span>{fluency_str}</span></div>'
+        )
+
     # Topic history (last 5)
     topics = state.get("topic_history", [])[-5:]
     topics_html = "".join(
@@ -177,11 +200,7 @@ def build_report_html(state: dict, week_scores: list[dict], insight: str) -> tup
 </div>
 
 <h2>This Week's Scores</h2>
-{"<p style='color:#888'>No evaluated sessions this week.</p>" if n_sessions == 0 else f"""
-<div class="score-bar"><span style="width:80px">Grammar</span><div class="bar-track"><div class="bar-fill" style="width:{avg_grammar/5*100:.0f}%"></div></div><span>{avg_grammar:.1f}</span></div>
-<div class="score-bar"><span style="width:80px">Semantics</span><div class="bar-track"><div class="bar-fill" style="width:{avg_semantics/5*100:.0f}%"></div></div><span>{avg_semantics:.1f}</span></div>
-<div class="score-bar"><span style="width:80px">Fluency</span><div class="bar-track"><div class="bar-fill" style="width:{avg_fluency/5*100:.0f}%"></div></div><span>{avg_fluency:.1f}</span></div>
-"""}
+{scores_section_html}
 
 <h2>Coach's Note</h2>
 <div class="insight">{insight}</div>
