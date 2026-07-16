@@ -68,6 +68,15 @@
         "fluency": 3
       },
       "avg": 2.33
+    },
+    {
+      "date": "2026-07-16",
+      "scores": {
+        "grammar": 2,
+        "semantics": 4,
+        "fluency": 2
+      },
+      "avg": 2.67
     }
   ],
   "recurring_errors": [
@@ -76,14 +85,10 @@
     "3. **Calque transitions from Portuguese**: \"By consequence\" (← *por consequência*) is part of a broader pattern of translating connective phrases word-for-word. Other likely forms to watch: \"in function of,\" \"in the measure that,\" \"till\" (for *até*). Student should build a reference list of correct English transitions.",
     "**False cognate \"once\" used to mean \"since/because\"** — likely carried over from Portuguese \"uma vez que\"; needs consistent correction.",
     "**\"Premises\" used instead of \"assumptions\"** — a recurring risk for Brazilian Portuguese speakers; the word \"premissa\" maps to \"assumption\" in business/data English contexts.",
-    "**Preposition \"through\" misused to translate \"através de\"** — appears when describing scope or distribution across groups; correct alternatives are \"among,\" \"across,\" or \"within.\""
+    "**Preposition \"through\" misused to translate \"através de\"** — appears when describing scope or distribution across groups; correct alternatives are \"among,\" \"across,\" or \"within.\"",
+    "1. **\"for\" + bare infinitive** — Student writes \"for create\" instead of \"to create\" or \"for creating.\" This is a high-frequency Portuguese interference error (Portuguese uses \"para criar\" → incorrectly mapped to \"for create\").",
+    "2. **False connector \"Otherwise\"** — Used to mean \"on the other hand\" (contrast), when it actually means \"or else\" (consequence). Likely influenced by Portuguese \"caso contrário.\"",
+    "3. **Noun adjunct pluralization** — \"stakeholders interpretability\" instead of \"stakeholder interpretability.\" Student adds \"-s\" to modifying nouns, following Portuguese grammar patterns where adjective-noun agreement requires plural forms."
   ],
-  "pending_evaluation": {
-    "session_num": 9,
-    "topic": "data science",
-    "subtopic": "dimensionality reduction",
-    "article": "**When Less Is More: The Power of Dimensionality Reduction in Data Science**\n\nImagine you are trying to predict customer churn. Your dataset has 500 features — demographic data, product usage logs, support ticket history, and dozens of behavioral signals. More data sounds like a good thing. But in practice, too many features can hurt your model. This is the core problem that dimensionality reduction is designed to solve.\n\nDimensionality reduction is the process of reducing the number of input variables in a dataset. The goal is to keep the most important information while removing noise, redundancy, and irrelevant features. The result is a smaller, cleaner dataset that is faster to process and often more accurate in predictions.\n\nThere are two main approaches. The first is **feature selection**, where you simply choose the most relevant variables and discard the rest. For example, you might use a correlation analysis to find that 50 of your 500 features explain 90% of the variance in customer behavior. The other 450 features add very little signal but a lot of computational cost.\n\nThe second approach is **feature extraction**, where you transform the original variables into a new, smaller set of variables. These new variables are combinations of the originals. **Principal Component Analysis**, or PCA, is the most well-known technique in this category. PCA rotates the data and finds the directions where it spreads the most. Those directions become the new features, called principal components. A company like Netflix, for example, might use PCA to compress hundreds of viewing behavior variables into just a few components before feeding them into a recommendation engine.\n\nDimensionality reduction also helps with a well-known challenge called the **curse of dimensionality**. This refers to the fact that as the number of features grows, the data becomes increasingly sparse. Sparse data makes it much harder for machine learning models to find meaningful patterns. Reducing dimensions directly addresses this problem.\n\nBeyond model performance, there is a practical visualization benefit. You cannot plot 500 dimensions on a screen. But if you reduce your data to two or three components, you can create scatter plots that reveal natural clusters or outliers. Data scientists often use a technique called **t-SNE** for exactly this purpose — to visualize high-dimensional data in two dimensions and spot structure that was invisible before.\n\nThe tradeoff, of course, is interpretability. When you use PCA or t-SNE, the new components are mathematical abstractions. It becomes harder to explain to a business stakeholder exactly what \"principal component 3\" means in plain language. This is a real challenge in revenue operations and sales settings, where executives expect clear, intuitive explanations.\n\nChoosing the right technique depends on your goal. If you need transparency, feature selection is safer. If you need performance, feature extraction often wins. Good data scientists know when to prioritize each.",
-    "writing_task": "Read the section about the **tradeoff between model performance and interpretability**. Then write **2–3 sentences** responding to this prompt:\n\n*What did you find most interesting about this tradeoff, and why does it matter in a business context like sales compensation or revenue operations?*\n\n**Guidance for your sentences:**\n- Sentence 1: State what you found interesting (use a phrase like *\"I found it interesting that...\"* or *\"What caught my attention was...\"*)\n- Sentence 2: Explain why this matters in your work (use *\"This is important because...\"* or *\"In my experience...\"*)\n- Sentence 3 (optional): Add a specific example or personal opinion\n\n**Vocabulary to try using:** *interpretability, stakeholder, tradeoff*",
-    "date": "2026-07-15"
-  }
+  "pending_evaluation": null
 }

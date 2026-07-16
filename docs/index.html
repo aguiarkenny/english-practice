@@ -28,7 +28,7 @@
 </head>
 <body>
   <h1>English Practice — Progress Dashboard</h1>
-  <p class="subtitle">Last updated: 2026-07-16 01:16 UTC · Last session: 2026-07-15</p>
+  <p class="subtitle">Last updated: 2026-07-16 11:24 UTC · Last session: 2026-07-15</p>
 
   <div class="grid">
     <div class="card">
@@ -36,7 +36,7 @@
       <div class="big-num">1<span style="font-size:.4em;color:#999">/5</span></div>
       <div class="big-label">Beginner</div>
       <div class="level-bar-track"><div class="level-bar-fill" style="width:20%"></div></div>
-      <div class="level-hint">Progress toward next level: 62% (based on last 5 sessions avg)</div>
+      <div class="level-hint">Progress toward next level: 63% (based on last 5 sessions avg)</div>
     </div>
 
     <div class="card">
@@ -55,7 +55,7 @@
     <div class="card">
       <h2>Avg Score (last 5)</h2>
       <div class="big-num">
-        2.5
+        2.6
         <span style="font-size:.4em;color:#999">/5</span>
       </div>
       <div class="big-label">grammar · semantics · fluency</div>
@@ -65,12 +65,12 @@
 
     <div class="card full">
       <h2>Score History</h2>
-      <table><tr><th>Date</th><th>Grammar</th><th>Semantics</th><th>Fluency</th><th>Average</th></tr><tr><td>2026-07-10</td><td>3</td><td>1</td><td>3</td><td style="color:#c62828;font-weight:bold">2.3</td></tr><tr><td>2026-07-09</td><td>2</td><td>4</td><td>2</td><td style="color:#c62828;font-weight:bold">2.7</td></tr></table>
+      <table><tr><th>Date</th><th>Grammar</th><th>Semantics</th><th>Fluency</th><th>Average</th></tr><tr><td>2026-07-16</td><td>2</td><td>4</td><td>2</td><td style="color:#c62828;font-weight:bold">2.7</td></tr><tr><td>2026-07-10</td><td>3</td><td>1</td><td>3</td><td style="color:#c62828;font-weight:bold">2.3</td></tr><tr><td>2026-07-09</td><td>2</td><td>4</td><td>2</td><td style="color:#c62828;font-weight:bold">2.7</td></tr></table>
     </div>
 
     <div class="card">
       <h2>Recurring Errors to Watch</h2>
-      <ul><li>1. **False cognate "realizar" → "realize"**: Student wrote "treatments realized" meaning *carried out/conducted*. This pattern (using "realize" to mean *executar/realizar*) is extremely common among Brazilian writers and should be tracked and corrected consistently.</li><li>2. **Portuguese word order in complex comparisons**: Constructions like "how harder than X the Y is" reflect direct L1 syntax transfer. Student needs to practice English comparative clause structure (e.g., "how much harder Y is than X").</li><li>3. **Calque transitions from Portuguese**: "By consequence" (← *por consequência*) is part of a broader pattern of translating connective phrases word-for-word. Other likely forms to watch: "in function of," "in the measure that," "till" (for *até*). Student should build a reference list of correct English transitions.</li><li>**False cognate "once" used to mean "since/because"** — likely carried over from Portuguese "uma vez que"; needs consistent correction.</li><li>**"Premises" used instead of "assumptions"** — a recurring risk for Brazilian Portuguese speakers; the word "premissa" maps to "assumption" in business/data English contexts.</li><li>**Preposition "through" misused to translate "através de"** — appears when describing scope or distribution across groups; correct alternatives are "among," "across," or "within."</li></ul>
+      <ul><li>1. **False cognate "realizar" → "realize"**: Student wrote "treatments realized" meaning *carried out/conducted*. This pattern (using "realize" to mean *executar/realizar*) is extremely common among Brazilian writers and should be tracked and corrected consistently.</li><li>2. **Portuguese word order in complex comparisons**: Constructions like "how harder than X the Y is" reflect direct L1 syntax transfer. Student needs to practice English comparative clause structure (e.g., "how much harder Y is than X").</li><li>3. **Calque transitions from Portuguese**: "By consequence" (← *por consequência*) is part of a broader pattern of translating connective phrases word-for-word. Other likely forms to watch: "in function of," "in the measure that," "till" (for *até*). Student should build a reference list of correct English transitions.</li><li>**False cognate "once" used to mean "since/because"** — likely carried over from Portuguese "uma vez que"; needs consistent correction.</li><li>**"Premises" used instead of "assumptions"** — a recurring risk for Brazilian Portuguese speakers; the word "premissa" maps to "assumption" in business/data English contexts.</li><li>**Preposition "through" misused to translate "através de"** — appears when describing scope or distribution across groups; correct alternatives are "among," "across," or "within."</li><li>1. **"for" + bare infinitive** — Student writes "for create" instead of "to create" or "for creating." This is a high-frequency Portuguese interference error (Portuguese uses "para criar" → incorrectly mapped to "for create").</li><li>2. **False connector "Otherwise"** — Used to mean "on the other hand" (contrast), when it actually means "or else" (consequence). Likely influenced by Portuguese "caso contrário."</li><li>3. **Noun adjunct pluralization** — "stakeholders interpretability" instead of "stakeholder interpretability." Student adds "-s" to modifying nouns, following Portuguese grammar patterns where adjective-noun agreement requires plural forms.</li></ul>
     </div>
 
     <div class="card full">
@@ -90,12 +90,12 @@
     new Chart(ctx, {
       type: 'line',
       data: {
-        labels: ["2026-07-09", "2026-07-10"],
+        labels: ["2026-07-09", "2026-07-10", "2026-07-16"],
         datasets: [
-          { label: 'Grammar', data: [2, 3], borderColor: '#e53935', tension: 0.3, fill: false },
-          { label: 'Semantics', data: [4, 1], borderColor: '#1e88e5', tension: 0.3, fill: false },
-          { label: 'Fluency', data: [2, 3], borderColor: '#43a047', tension: 0.3, fill: false },
-          { label: 'Average', data: [2.67, 2.33], borderColor: '#6d4c41', borderWidth: 2, borderDash: [5,3], tension: 0.3, fill: false },
+          { label: 'Grammar', data: [2, 3, 2], borderColor: '#e53935', tension: 0.3, fill: false },
+          { label: 'Semantics', data: [4, 1, 4], borderColor: '#1e88e5', tension: 0.3, fill: false },
+          { label: 'Fluency', data: [2, 3, 2], borderColor: '#43a047', tension: 0.3, fill: false },
+          { label: 'Average', data: [2.67, 2.33, 2.67], borderColor: '#6d4c41', borderWidth: 2, borderDash: [5,3], tension: 0.3, fill: false },
         ]
       },
       options: {
