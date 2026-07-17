@@ -82,25 +82,28 @@
         "fluency": 2
       },
       "avg": 2.67
+    },
+    {
+      "date": "2026-07-17",
+      "scores": {
+        "grammar": 2,
+        "semantics": 4,
+        "fluency": 2
+      },
+      "avg": 2.67
     }
   ],
   "recurring_errors": [
-    "1. **False cognate \"realizar\" → \"realize\"**: Student wrote \"treatments realized\" meaning *carried out/conducted*. This pattern (using \"realize\" to mean *executar/realizar*) is extremely common among Brazilian writers and should be tracked and corrected consistently.",
-    "2. **Portuguese word order in complex comparisons**: Constructions like \"how harder than X the Y is\" reflect direct L1 syntax transfer. Student needs to practice English comparative clause structure (e.g., \"how much harder Y is than X\").",
     "3. **Calque transitions from Portuguese**: \"By consequence\" (← *por consequência*) is part of a broader pattern of translating connective phrases word-for-word. Other likely forms to watch: \"in function of,\" \"in the measure that,\" \"till\" (for *até*). Student should build a reference list of correct English transitions.",
     "**False cognate \"once\" used to mean \"since/because\"** — likely carried over from Portuguese \"uma vez que\"; needs consistent correction.",
     "**\"Premises\" used instead of \"assumptions\"** — a recurring risk for Brazilian Portuguese speakers; the word \"premissa\" maps to \"assumption\" in business/data English contexts.",
     "**Preposition \"through\" misused to translate \"através de\"** — appears when describing scope or distribution across groups; correct alternatives are \"among,\" \"across,\" or \"within.\"",
     "1. **\"for\" + bare infinitive** — Student writes \"for create\" instead of \"to create\" or \"for creating.\" This is a high-frequency Portuguese interference error (Portuguese uses \"para criar\" → incorrectly mapped to \"for create\").",
     "2. **False connector \"Otherwise\"** — Used to mean \"on the other hand\" (contrast), when it actually means \"or else\" (consequence). Likely influenced by Portuguese \"caso contrário.\"",
-    "3. **Noun adjunct pluralization** — \"stakeholders interpretability\" instead of \"stakeholder interpretability.\" Student adds \"-s\" to modifying nouns, following Portuguese grammar patterns where adjective-noun agreement requires plural forms."
+    "3. **Noun adjunct pluralization** — \"stakeholders interpretability\" instead of \"stakeholder interpretability.\" Student adds \"-s\" to modifying nouns, following Portuguese grammar patterns where adjective-noun agreement requires plural forms.",
+    "1. **Subject-verb agreement with third-person singular:** Student omits the \"-s\" ending on present-tense verbs (\"identify\" instead of \"identifies\"). Monitor in future writing tasks.",
+    "2. **Purpose clauses using \"for + gerund\" instead of \"to + infinitive\":** \"For solving\" instead of \"To solve\" — a direct Portuguese transfer pattern (\"para resolver\") that appears consistently.",
+    "3. **Relative pronoun confusion (\"what\" vs. \"which\"):** Student uses \"what\" to introduce a clause referring to a preceding idea, where English requires \"which.\" This is a recurring pattern among Portuguese speakers."
   ],
-  "pending_evaluation": {
-    "session_num": 10,
-    "topic": "data science",
-    "subtopic": "Bayesian methods in practice",
-    "article": "**Bayesian Methods: From Theory to Business Reality**\n\nMost data scientists learn Bayesian statistics in school. They study probability distributions, Bayes' theorem, and prior beliefs. But many struggle to connect these concepts to real business problems. The gap between classroom theory and workplace practice is significant — and closing it can make a data scientist far more valuable.\n\nLet's start with a concrete example. Imagine you work at a SaaS company and your sales team launches a new outreach strategy. After two weeks, the conversion rate looks promising: 8 out of 50 prospects converted. A traditional (frequentist) approach would test whether this result is statistically significant. But with only 50 observations, the confidence interval is wide, and the result is inconclusive.\n\nA Bayesian approach works differently. Instead of waiting for statistical significance, you incorporate what you already know. Maybe your historical conversion rate for similar campaigns was around 12%. You use this as your **prior**. Then you combine it with the new data — 8 conversions out of 50 — to produce a **posterior distribution**. This posterior tells you the most likely range of true conversion rates, given both your prior knowledge and the new evidence.\n\nThe business advantage here is speed. Executives rarely want to wait for a sample size of 5,000 before making a decision. Bayesian models let you make informed, probabilistic decisions with smaller datasets. You are not claiming certainty. Instead, you are saying: *given everything we know, the true conversion rate is most likely between 10% and 15%.*\n\nBayesian methods also handle **uncertainty quantification** better than most alternatives. In revenue operations, this matters enormously. If you are forecasting quarterly revenue, you do not just want a single number — you want to know the probability that revenue will fall below your target. A Bayesian model gives you that. It produces a full distribution of possible outcomes, not just a point estimate.\n\nOne common objection is subjectivity. Critics argue that choosing a prior introduces bias. This concern is valid but manageable. When you have strong historical data, the prior matters less — the data eventually dominates. When data is scarce, the prior matters more, and that is exactly when expert knowledge should inform the model. Transparency about your prior assumptions is the key professional practice here.\n\nCompanies like Google, Netflix, and Spotify use Bayesian methods extensively in A/B testing, recommendation systems, and user behavior modeling. They do so because Bayesian frameworks are honest about uncertainty, adaptable to new information, and practical with small samples. For data scientists working in fast-moving business environments, these are not small advantages — they are essential.",
-    "writing_task": "Write **2–3 sentences** summarizing the main argument of the article.\n\nYour summary should answer these three questions:\n1. What problem does the article identify with traditional statistical methods in business settings?\n2. What solution does the article propose?\n3. What is the main business benefit of this solution?\n\nUse your own words. Do not copy sentences directly from the text. Write in complete sentences.",
-    "date": "2026-07-16"
-  }
+  "pending_evaluation": null
 }
