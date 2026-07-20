@@ -1,8 +1,8 @@
 {
   "reading_level": 1,
   "writing_level": 1,
-  "session_count": 11,
-  "last_session_date": "2026-07-17",
+  "session_count": 12,
+  "last_session_date": "2026-07-20",
   "topic_history": [
     {
       "topic": "data science",
@@ -58,6 +58,11 @@
       "topic": "data science",
       "subtopic": "feature engineering",
       "date": "2026-07-17"
+    },
+    {
+      "topic": "data science",
+      "subtopic": "model evaluation metrics",
+      "date": "2026-07-20"
     }
   ],
   "recent_writing_scores": [
@@ -119,5 +124,12 @@
     "2. **Incorrect use of \"accordingly\" instead of \"according to\"** — student confuses the adverb \"accordingly\" with the prepositional phrase \"according to.\" Watch for similar adverb/preposition confusion in future writing.",
     "3. **Wrong verb form after auxiliary or complement structures** — e.g., \"allows models handling\" instead of \"allows models to handle,\" and \"while uses\" instead of \"while using.\" Student needs reinforcement of infinitive and gerund complement rules in English."
   ],
-  "pending_evaluation": null
+  "pending_evaluation": {
+    "session_num": 12,
+    "topic": "data science",
+    "subtopic": "model evaluation metrics",
+    "article": "**When Accuracy Lies: Choosing the Right Metrics for Your Machine Learning Model**\n\nImagine you build a model to detect fraud in financial transactions. You test it, and the results look impressive: 98% accuracy. You feel confident. Then your manager asks a simple question — \"How many actual fraud cases did it catch?\" You check the numbers. The model flagged almost nothing. It simply predicted \"not fraud\" for every single transaction, and it was right 98% of the time — because fraud is rare.\n\nThis is one of the most common and costly mistakes in applied machine learning. Accuracy looks clean and simple, but it can be deeply misleading. This is why experienced data scientists rely on a richer set of evaluation metrics.\n\n**Precision and Recall: The Core Trade-off**\n\nTwo of the most important metrics are precision and recall. Precision measures how many of your model's positive predictions were actually correct. Recall measures how many of the real positive cases your model successfully identified.\n\nThese two metrics pull in opposite directions. If you want to catch every fraud case possible, you increase recall — but you will also flag more legitimate transactions by mistake. If you want your fraud alerts to be highly reliable, you increase precision — but you might miss some real fraud cases.\n\nThe right balance depends entirely on the business context. In medical diagnosis, missing a real cancer case is far more dangerous than a false alarm. So you prioritize recall. In email spam filtering, sending a legitimate email to the spam folder is annoying but not catastrophic. You can afford a stricter precision threshold.\n\n**The F1 Score: One Number to Balance Both**\n\nWhen you need a single metric that reflects both precision and recall, the F1 score is a natural choice. It calculates the harmonic mean of the two values. A high F1 score means your model is both accurate in its alerts and thorough in catching real cases.\n\nHowever, the F1 score treats precision and recall as equally important. In practice, they rarely are. The F-beta score is a more flexible version that lets you assign more weight to recall or precision depending on your priorities.\n\n**AUC-ROC: Measuring Discriminative Power**\n\nAnother widely used metric is the AUC-ROC, which stands for Area Under the Receiver Operating Characteristic Curve. It measures how well your model separates the two classes — for example, fraud versus legitimate — across all possible decision thresholds. A perfect model scores 1.0. A random model scores 0.5.\n\nAUC-ROC is especially useful when you are comparing multiple models or when the decision threshold has not been finalized yet. It gives you a threshold-independent view of model performance.\n\n**The Practical Takeaway**\n\nNo single metric tells the full story. The best data scientists choose metrics before they train the model — not after. They ask: what does a false positive cost? What does a false negative cost? The answers define which metrics matter most.\n\nModel evaluation is not a technical formality. It is a business decision dressed in mathematics.",
+    "writing_task": "Write **2–3 sentences** responding to this prompt:\n\n*\"The article explains that choosing the right evaluation metric depends on the business context. Think about a project you have worked on — or imagine a sales compensation scenario — where using the wrong metric could lead to a bad decision. What metric would matter most in that situation, and why?\"*\n\n**Guidelines for your response:**\n- Use at least one term from the Vocabulary Spotlight section below.\n- Start your first sentence by naming the scenario or project.\n- In your final sentence, explain the consequence of choosing the wrong metric.\n\n**Example of a Level 1 response (your target length and style):**\n*\"In a sales commission audit model, recall would be the most important metric. Missing a real overpayment case is more costly than flagging one that is correct. Using accuracy alone could hide many expensive errors.\"*",
+    "date": "2026-07-20"
+  }
 }
