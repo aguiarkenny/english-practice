@@ -96,26 +96,28 @@
         "fluency": 2
       },
       "avg": 2.67
+    },
+    {
+      "date": "2026-07-20",
+      "scores": {
+        "grammar": 2,
+        "semantics": 4,
+        "fluency": 2
+      },
+      "avg": 2.67
     }
   ],
   "recurring_errors": [
-    "3. **Calque transitions from Portuguese**: \"By consequence\" (← *por consequência*) is part of a broader pattern of translating connective phrases word-for-word. Other likely forms to watch: \"in function of,\" \"in the measure that,\" \"till\" (for *até*). Student should build a reference list of correct English transitions.",
-    "**False cognate \"once\" used to mean \"since/because\"** — likely carried over from Portuguese \"uma vez que\"; needs consistent correction.",
-    "**\"Premises\" used instead of \"assumptions\"** — a recurring risk for Brazilian Portuguese speakers; the word \"premissa\" maps to \"assumption\" in business/data English contexts.",
     "**Preposition \"through\" misused to translate \"através de\"** — appears when describing scope or distribution across groups; correct alternatives are \"among,\" \"across,\" or \"within.\"",
     "1. **\"for\" + bare infinitive** — Student writes \"for create\" instead of \"to create\" or \"for creating.\" This is a high-frequency Portuguese interference error (Portuguese uses \"para criar\" → incorrectly mapped to \"for create\").",
     "2. **False connector \"Otherwise\"** — Used to mean \"on the other hand\" (contrast), when it actually means \"or else\" (consequence). Likely influenced by Portuguese \"caso contrário.\"",
     "3. **Noun adjunct pluralization** — \"stakeholders interpretability\" instead of \"stakeholder interpretability.\" Student adds \"-s\" to modifying nouns, following Portuguese grammar patterns where adjective-noun agreement requires plural forms.",
     "1. **Subject-verb agreement with third-person singular:** Student omits the \"-s\" ending on present-tense verbs (\"identify\" instead of \"identifies\"). Monitor in future writing tasks.",
     "2. **Purpose clauses using \"for + gerund\" instead of \"to + infinitive\":** \"For solving\" instead of \"To solve\" — a direct Portuguese transfer pattern (\"para resolver\") that appears consistently.",
-    "3. **Relative pronoun confusion (\"what\" vs. \"which\"):** Student uses \"what\" to introduce a clause referring to a preceding idea, where English requires \"which.\" This is a recurring pattern among Portuguese speakers."
+    "3. **Relative pronoun confusion (\"what\" vs. \"which\"):** Student uses \"what\" to introduce a clause referring to a preceding idea, where English requires \"which.\" This is a recurring pattern among Portuguese speakers.",
+    "1. **Dropped subject pronoun before a verb** — student omits \"it\" in clauses like \"because allows\" instead of \"because it allows.\" This is a direct transfer from Portuguese, where subject pronouns are regularly omitted.",
+    "2. **Incorrect use of \"accordingly\" instead of \"according to\"** — student confuses the adverb \"accordingly\" with the prepositional phrase \"according to.\" Watch for similar adverb/preposition confusion in future writing.",
+    "3. **Wrong verb form after auxiliary or complement structures** — e.g., \"allows models handling\" instead of \"allows models to handle,\" and \"while uses\" instead of \"while using.\" Student needs reinforcement of infinitive and gerund complement rules in English."
   ],
-  "pending_evaluation": {
-    "session_num": 11,
-    "topic": "data science",
-    "subtopic": "feature engineering",
-    "article": "**Feature Engineering: The Hidden Work Behind Accurate Models**\n\nIn machine learning, the algorithm often gets the credit. But experienced data scientists know that the real work happens before the model even runs. Feature engineering — the process of transforming raw data into meaningful inputs — is frequently what separates a model that performs well from one that fails in production.\n\nConsider a simple example. Imagine you are building a model to predict whether a sales representative will close a deal this quarter. Your raw data includes a timestamp for each customer interaction. A timestamp alone tells the model very little. But when you extract features from it — such as the day of the week, the number of days since the last contact, or whether the interaction happened in the final week of the quarter — suddenly the data carries real predictive power. You did not change the underlying information. You changed its shape.\n\nThis transformation process requires both technical skill and domain knowledge. A data scientist who understands sales compensation, for instance, knows that behavior changes near quota deadlines. That knowledge leads to better feature choices. In contrast, someone without that context might ignore the timing dimension entirely and miss a critical signal.\n\nThere are several common feature engineering techniques used in practice. **Binning** groups continuous values into categories. For example, instead of using a customer's exact annual revenue, you might group companies into small, mid-market, and enterprise tiers. This can help models generalize better and handle outliers more gracefully. **Encoding** converts categorical variables — like industry type or region — into numerical formats the model can process. One popular method is one-hot encoding, which creates a separate binary column for each category.\n\nAnother powerful technique is **feature interaction**. This involves combining two or more variables to capture relationships that neither variable expresses alone. For example, multiplying \"number of products purchased\" by \"average deal size\" might reveal a composite signal about customer value that neither feature captures independently.\n\nIt is also important to know when *not* to engineer features. Adding too many features can lead to overfitting, where the model learns noise instead of real patterns. This is sometimes called the curse of dimensionality. In practice, data scientists use methods like correlation analysis and feature importance scores to remove variables that add complexity without adding value.\n\nFeature engineering is not a one-time step. As business conditions change — new products launch, sales territories shift, compensation plans are redesigned — the features that matter most will evolve. Effective data scientists revisit their feature sets regularly and treat them as living artifacts, not fixed inputs.\n\nThe best models are rarely built by the best algorithms. They are built by teams who deeply understand their data, their business, and the careful craft of shaping one into the other.",
-    "writing_task": "Choose **one** of the following concepts from the article and write **2–3 sentences** describing it in your own words:\n\n- **Binning** — what it is and why it can be useful\n- **Feature interaction** — what it means to combine two variables and why this matters\n- **Overfitting** — what happens when a model learns too many features\n\nBe specific. Try to use your own example if possible — for instance, from your work in sales compensation or revenue operations. Avoid copying sentences directly from the article.\n\n*Example starter phrases you can use:*\n- \"Binning is a technique that...\"\n- \"When we combine two features, we can...\"\n- \"Overfitting happens when...\"",
-    "date": "2026-07-17"
-  }
+  "pending_evaluation": null
 }
