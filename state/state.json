@@ -1,8 +1,8 @@
 {
   "reading_level": 1,
   "writing_level": 1,
-  "session_count": 13,
-  "last_session_date": "2026-07-21",
+  "session_count": 14,
+  "last_session_date": "2026-07-22",
   "topic_history": [
     {
       "topic": "data science",
@@ -68,6 +68,11 @@
       "topic": "data science",
       "subtopic": "data pipeline design",
       "date": "2026-07-21"
+    },
+    {
+      "topic": "data science",
+      "subtopic": "A/B testing methodology",
+      "date": "2026-07-22"
     }
   ],
   "recent_writing_scores": [
@@ -130,11 +135,11 @@
     "3. **Wrong verb form after auxiliary or complement structures** — e.g., \"allows models handling\" instead of \"allows models to handle,\" and \"while uses\" instead of \"while using.\" Student needs reinforcement of infinitive and gerund complement rules in English."
   ],
   "pending_evaluation": {
-    "session_num": 13,
+    "session_num": 14,
     "topic": "data science",
-    "subtopic": "data pipeline design",
-    "article": "**Building Data Pipelines That Actually Work in Production**\n\nA data pipeline sounds simple in theory: move data from point A to point B, transform it along the way, and deliver it somewhere useful. In practice, however, building a pipeline that works reliably in a production environment is one of the most challenging tasks in modern data engineering.\n\nThe most common mistake teams make is designing for the best-case scenario. They build a pipeline that works perfectly when data arrives on time, in the right format, and without duplicates. Then, on a Monday morning, an upstream API changes its response schema, and the entire pipeline fails silently. Nobody notices until a sales manager asks why last week's revenue numbers are missing from the dashboard.\n\nResilient pipeline design starts with a simple principle: **assume the data will be wrong**. This means building validation checks at every ingestion point. For example, if your pipeline pulls customer transaction data from a CRM every hour, you should verify row counts, check for null values in key fields, and compare totals against expected ranges. Tools like Great Expectations or dbt tests make this kind of data quality monitoring practical and repeatable.\n\nAnother critical design decision is choosing between batch processing and streaming. Batch pipelines run on a schedule — every hour, every night, every week. They are easier to build and debug, but they introduce latency. A sales compensation team, for instance, might be comfortable receiving daily commission updates. However, a fraud detection system cannot wait twenty-four hours. Streaming pipelines, built with tools like Apache Kafka or AWS Kinesis, process data as it arrives. They reduce latency significantly but require more infrastructure investment and operational expertise.\n\nModularity is another best practice that experienced engineers recommend. Instead of writing one enormous script that does everything, break the pipeline into distinct, testable stages: ingestion, validation, transformation, and loading. This structure makes it much easier to identify where a failure occurred. If the transformation stage breaks, the ingestion logs remain clean and unchanged. Debugging becomes faster, and the pipeline becomes easier for new team members to understand.\n\nFinally, observability must be built in from the start, not added later as an afterthought. This means logging key metrics at each stage: how many records were processed, how long each step took, and how many records were rejected due to quality failures. A well-instrumented pipeline tells you not just *that* something broke, but *where* and *why*.\n\nOrganizations that invest in thoughtful pipeline architecture see real business benefits. Fewer data incidents mean less time fixing errors and more time generating insights. The goal is not a perfect pipeline — that does not exist. The goal is a pipeline that fails gracefully, communicates clearly, and recovers quickly.",
-    "writing_task": "Write **2–3 sentences** summarizing the main argument of the article.\n\nIn your sentences, make sure you address the following points:\n- What is the central problem the article identifies with how teams build data pipelines?\n- What does the author suggest engineers should do differently to make pipelines more reliable?\n\nUse your own words. Do not copy sentences directly from the text. Focus on the author's core message, not on specific tools or details.",
-    "date": "2026-07-21"
+    "subtopic": "A/B testing methodology",
+    "article": "**Why Your A/B Test Results Might Be Lying to You**\n\nA/B testing is one of the most widely used tools in data science, but it is also one of the most frequently misused. Many teams run experiments, see a positive result, and ship the feature — only to discover later that the improvement was not real. Understanding why this happens requires looking closely at the methodology behind the test, not just the numbers it produces.\n\nThe most common source of error is running a test without calculating the required sample size in advance. To detect a meaningful effect, you need enough users in each group. If you stop the test too early — a practice known as \"peeking\" — you dramatically increase the chance of seeing a false positive. This is sometimes called the \"peeking problem,\" and it explains why so many A/B test results fail to hold up after launch.\n\nA second issue involves the choice of metric. Teams often optimize for a metric that is easy to measure, such as click-through rate, rather than the one that actually matters, such as revenue per user or 30-day retention. According to researchers at Microsoft and Google, who have published extensively on large-scale experimentation, the majority of A/B tests in industry measure proxies rather than true business outcomes. This distinction matters enormously in practice.\n\nThere is also the question of statistical significance versus practical significance. A result can be statistically significant — meaning unlikely to occur by chance — while still being too small to justify implementation costs. For example, a 0.1% lift in conversion rate may reach a p-value below 0.05, but deploying a new model to achieve that lift could cost more than the revenue it generates. Data scientists need to communicate this difference clearly to business stakeholders, which is often harder than the analysis itself.\n\nOne practical solution is to define your success criteria before the experiment begins. This means writing down the minimum detectable effect you care about, the significance threshold you will use, and the exact metric you will evaluate — all before a single user enters the test. Teams that follow this discipline report fewer surprises at the end of an experiment, and they are better positioned to defend their conclusions when stakeholders challenge the results.\n\nFinally, it is worth remembering that A/B testing is not just a statistical exercise. It is a decision-making framework. The goal is not to find significance — it is to make better business decisions with less risk. Keeping that purpose in mind helps teams design better experiments from the start.",
+    "writing_task": "Write **2–3 sentences** summarizing the main argument of this article.\n\nIn your summary, make sure you address the following:\n\n- What problem does the article identify with how teams typically run A/B tests?\n- What does the author recommend teams do **before** starting an experiment?\n\n**Tip:** Try to use the phrase *\"according to\"* naturally in at least one of your sentences. Also, pay attention to your sentence subjects — make sure every verb has a clear subject before it (for example: *\"It is important that…\"* rather than *\"Is important that…\"*).\n\nWrite your 2–3 sentences below before checking any model answer.",
+    "date": "2026-07-22"
   }
 }
