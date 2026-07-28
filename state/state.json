@@ -1,8 +1,8 @@
 {
   "reading_level": 1,
   "writing_level": 1,
-  "session_count": 17,
-  "last_session_date": "2026-07-27",
+  "session_count": 18,
+  "last_session_date": "2026-07-28",
   "topic_history": [
     {
       "topic": "data science",
@@ -88,6 +88,11 @@
       "topic": "data science",
       "subtopic": "ML model deployment",
       "date": "2026-07-27"
+    },
+    {
+      "topic": "data science",
+      "subtopic": "data quality and governance",
+      "date": "2026-07-28"
     }
   ],
   "recent_writing_scores": [
@@ -150,11 +155,11 @@
     "3. **Wrong verb form after auxiliary or complement structures** — e.g., \"allows models handling\" instead of \"allows models to handle,\" and \"while uses\" instead of \"while using.\" Student needs reinforcement of infinitive and gerund complement rules in English."
   ],
   "pending_evaluation": {
-    "session_num": 17,
+    "session_num": 18,
     "topic": "data science",
-    "subtopic": "ML model deployment",
-    "article": "**From Notebook to Production: The Real Challenges of ML Model Deployment**\n\nBuilding a machine learning model is only half the job. The harder half — the part that determines whether a model actually creates business value — is deployment. Getting a model from a data scientist's notebook into a live production environment is a process full of technical, organizational, and operational challenges.\n\nIn theory, deployment sounds simple: you train a model, package it, and serve predictions to users or systems. In practice, it rarely works that way. One of the most common failure points is the gap between the training environment and the production environment. A model trained on clean, historical data may behave unpredictably when it meets messy, real-time data. This is sometimes called a **training-serving skew**, and it is one of the leading causes of model degradation after launch.\n\nConsider a real-world scenario: a sales team at a SaaS company uses an ML model to score leads and prioritize outreach. The model was trained on 18 months of CRM data and performed well in testing, with an AUC score of 0.87. But three months after deployment, sales managers started noticing that high-scoring leads were converting at lower rates. The data science team investigated and found that the sales process had changed — new product tiers were introduced, and the input features feeding the model no longer reflected current customer behavior. The model had not been retrained, and no monitoring system was in place to flag the drift.\n\nThis scenario illustrates why deployment is not a one-time event. It requires ongoing infrastructure. Modern ML engineering teams use tools like **MLflow**, **Kubeflow**, or **AWS SageMaker** to manage the full model lifecycle — from experiment tracking to versioning to deployment pipelines. These platforms allow teams to roll back to a previous model version if performance drops, which reduces risk significantly.\n\nMonitoring is equally critical. Teams should track not only model accuracy metrics but also **data drift** — changes in the statistical distribution of input features over time. If the data coming into the model starts to look different from the data it was trained on, predictions will become unreliable. Tools like Evidently AI or Fiddler are specifically designed for this kind of production monitoring.\n\nAnother common challenge is **latency**. Some models are complex enough that generating a single prediction takes too long for real-time applications. In these cases, teams must choose between simplifying the model, using batch predictions instead of real-time ones, or optimizing the serving infrastructure.\n\nUltimately, successful ML deployment requires collaboration between data scientists, ML engineers, and business stakeholders. A model that no one trusts, monitors, or maintains will not deliver value — no matter how impressive its training metrics were.",
-    "writing_task": "Read the article carefully and write **2–3 sentences** that summarize its main argument. Your summary should answer these three questions:\n\n1. What is the main challenge the article describes?\n2. What is one specific example or problem mentioned?\n3. What does the article say teams need to do to solve this problem?\n\nWrite in your own words. Do not copy sentences directly from the article.",
-    "date": "2026-07-27"
+    "subtopic": "data quality and governance",
+    "article": "**Dirty Data Has a Price Tag: Why Data Quality Is a Business Problem, Not Just a Technical One**\n\nMost companies collect more data than ever before. But collecting data and trusting data are two very different things. According to IBM, poor data quality costs the United States economy approximately $3.1 trillion per year. That number is large enough to make any executive pay attention.\n\nData quality refers to how accurate, complete, consistent, and timely your data is. When any of these properties fail, decisions made from that data become unreliable. Imagine a sales team using a CRM where 20% of customer records have duplicate entries. The marketing team then targets the same customer twice, wasting budget and creating a frustrating experience.\n\nThis is why data governance has become a strategic priority. Data governance is the set of rules, processes, and responsibilities that control how data is managed across an organization. It answers critical questions: Who owns this data? Who is allowed to change it? How do we know if it is accurate?\n\nA useful real-world example is a retail company that tracks product inventory across hundreds of stores. If each store uses a slightly different naming convention — one writes \"Blue T-Shirt, Size M\" and another writes \"T-Shirt Blue M\" — the central data system cannot reliably aggregate that information. Analysts end up with fragmented reports, and the operations team makes poor restocking decisions.\n\nTo prevent these problems, many organizations appoint **data stewards**. A data steward is a person responsible for maintaining data quality within a specific domain, such as finance, sales, or customer records. They act as the bridge between technical teams, who build the systems, and business teams, who use the data every day.\n\nAnother important concept is a **data catalog**. Think of it as a library index for all the data assets in your company. It tells users what data exists, where it lives, how fresh it is, and who to contact if there is a problem. Without a catalog, data scientists waste enormous amounts of time just searching for the right dataset.\n\nModern data governance frameworks, such as those promoted by the DAMA International organization, emphasize that governance is not a one-time project. It is a continuous practice. Data quality does not stay clean on its own. New data sources, system migrations, and business changes constantly introduce errors and inconsistencies.\n\nThe companies that succeed with data-driven decisions are not always the ones with the most data. They are the ones that invest in keeping their data trustworthy. Clean data is a competitive advantage. Dirty data, on the other hand, is a hidden liability sitting inside your systems every single day.",
+    "writing_task": "Read the article carefully. Then write **2 to 3 sentences** that summarize the main argument.\n\nYour summary should answer these three questions:\n1. What problem does the article describe?\n2. What solution or approach does it recommend?\n3. Why does this matter for a business?\n\nWrite in your own words. Do not copy sentences directly from the article. Use simple, clear language.",
+    "date": "2026-07-28"
   }
 }
