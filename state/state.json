@@ -1,8 +1,8 @@
 {
   "reading_level": 1,
   "writing_level": 1,
-  "session_count": 21,
-  "last_session_date": "2026-07-31",
+  "session_count": 22,
+  "last_session_date": "2026-08-03",
   "topic_history": [
     {
       "topic": "data science",
@@ -108,6 +108,11 @@
       "topic": "data science",
       "subtopic": "feature engineering",
       "date": "2026-07-31"
+    },
+    {
+      "topic": "data science",
+      "subtopic": "model evaluation metrics",
+      "date": "2026-08-03"
     }
   ],
   "recent_writing_scores": [
@@ -170,11 +175,11 @@
     "3. **Wrong verb form after auxiliary or complement structures** — e.g., \"allows models handling\" instead of \"allows models to handle,\" and \"while uses\" instead of \"while using.\" Student needs reinforcement of infinitive and gerund complement rules in English."
   ],
   "pending_evaluation": {
-    "session_num": 21,
+    "session_num": 22,
     "topic": "data science",
-    "subtopic": "feature engineering",
-    "article": "**From Raw Data to Real Insight: The Art of Feature Engineering**\n\nIn machine learning, raw data rarely tells the full story. A dataset of customer transactions, for example, might include timestamps, purchase amounts, and product categories — but these columns alone are often not enough to build a powerful predictive model. Feature engineering is the process of transforming raw data into meaningful inputs that help models learn more effectively. It is one of the most impactful skills a data scientist can develop, and it often separates a good model from a great one.\n\nConsider a practical example. A sales team wants to predict which customers are likely to churn in the next 30 days. The raw data includes the date of each customer's last purchase. On its own, that date is just a number. However, when you calculate the number of days since the last purchase — a feature called \"recency\" — the model gains a much stronger signal. This transformation is simple, but it allows the model to capture patterns that raw timestamps cannot reveal.\n\nFeature engineering also involves creating interaction features. Suppose you have two columns: average order value and purchase frequency. Neither column alone tells the full story, but multiplying them together produces a new feature that approximates customer lifetime value. According to research in applied machine learning, interaction features like this one can improve model accuracy by 10 to 20 percent in certain business contexts.\n\nCategorical variables present another common challenge. A column containing country names, for instance, carries no mathematical meaning by itself. One popular technique for handling this is one-hot encoding, which converts each category into a separate binary column. This approach allows models to process categorical information without assuming any false numerical order between categories.\n\nTemporal features are especially valuable in revenue and sales contexts. Breaking a timestamp into its components — day of week, month, quarter, and whether a date falls on a holiday — gives the model richer context about when events occur. Many sales patterns are seasonal, and capturing this structure through feature engineering can significantly improve forecast accuracy.\n\nFinally, it is worth noting that feature engineering is not a purely mechanical step. It requires domain knowledge. A data scientist working in sales compensation, for example, needs to understand how quota cycles and commission periods affect purchasing behavior. That business context is what drives the decision to create a feature like \"days until quota reset\" — a variable that a general algorithm would never generate on its own.\n\nThe best feature engineering work combines statistical thinking with deep understanding of the business problem. It is creative, domain-specific, and often the hidden engine behind a model's real-world performance.",
-    "writing_task": "Choose **one** of the following feature engineering concepts from the article and write **2–3 sentences** describing it in your own words:\n\n- **Recency** as a derived feature\n- **One-hot encoding** for categorical variables\n- **Temporal features** and why they matter in sales contexts\n\nYour sentences should explain:\n1. **What** the concept is\n2. **Why** it is useful for a model\n\nUse this sentence starter if you need help beginning:\n\n> *\"Recency is a feature that...\"* or *\"One-hot encoding is a technique that...\"*\n\nTry to use the phrase **\"to improve\"** or **\"to capture\"** somewhere in your response.",
-    "date": "2026-07-31"
+    "subtopic": "model evaluation metrics",
+    "article": "**Choosing the Right Metric: Why Accuracy Alone Can Mislead You**\n\nWhen data scientists build classification models, one of the first questions they ask is: \"How good is this model?\" The most natural answer seems simple — just measure accuracy. If the model gets 95% of predictions right, it must be working well. But in real business scenarios, this thinking can lead teams seriously astray.\n\nConsider a fraud detection model at a bank. Fraudulent transactions represent roughly 1% of all activity. A model that simply labels every transaction as \"not fraud\" would achieve 99% accuracy. By that measure, it looks excellent. In practice, it is completely useless. This is the core problem with relying on accuracy alone: it hides critical failures when your data is imbalanced.\n\nThis is why experienced practitioners turn to a richer set of evaluation metrics. **Precision** answers the question: \"Of all the cases my model flagged as positive, how many actually were?\" **Recall** asks the opposite: \"Of all the actual positive cases, how many did my model catch?\" These two metrics often pull in opposite directions, and the right balance depends entirely on business context.\n\nIn fraud detection, missing a real fraud case is far more costly than triggering a false alarm. So teams prioritize high recall, even if precision drops. In contrast, a content moderation system that wrongly removes legitimate posts creates user frustration and potential legal risk. There, precision matters more.\n\nWhen you need a single number that balances both, the **F1 score** is a popular choice. It is the harmonic mean of precision and recall. Unlike a simple average, the harmonic mean penalizes extreme imbalances. A model with 90% precision but only 10% recall will score much lower than its arithmetic average suggests.\n\nFor models that output probabilities rather than hard labels, the **AUC-ROC** (Area Under the Receiver Operating Characteristic Curve) is widely used. It measures how well the model separates positive and negative cases across all possible decision thresholds. A random classifier scores 0.5. A perfect classifier scores 1.0. In practice, scores above 0.85 are generally considered strong for business applications.\n\nFinally, in sales forecasting and revenue operations, regression models use different metrics entirely. **RMSE** (Root Mean Squared Error) is common, but it penalizes large errors heavily. **MAE** (Mean Absolute Error) treats all errors equally and is often easier to explain to non-technical stakeholders.\n\nThe takeaway is clear: there is no universally correct metric. The right choice depends on the cost of different types of errors and the specific goals of your business problem. Choosing the wrong metric is not just a technical mistake — it is a business risk.",
+    "writing_task": "Write **2–3 sentences** summarizing the main argument of the article. Your summary should answer these two questions:\n\n1. What is the main problem with using accuracy as the only evaluation metric?\n2. What should data scientists do instead, and why does business context matter?\n\nUse your own words. Do not copy sentences directly from the article.",
+    "date": "2026-08-03"
   }
 }
