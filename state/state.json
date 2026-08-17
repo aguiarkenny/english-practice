@@ -1,8 +1,8 @@
 {
   "reading_level": 1,
   "writing_level": 1,
-  "session_count": 31,
-  "last_session_date": "2026-08-14",
+  "session_count": 32,
+  "last_session_date": "2026-08-17",
   "topic_history": [
     {
       "topic": "data science",
@@ -158,6 +158,11 @@
       "topic": "data science",
       "subtopic": "feature engineering",
       "date": "2026-08-14"
+    },
+    {
+      "topic": "data science",
+      "subtopic": "model evaluation metrics",
+      "date": "2026-08-17"
     }
   ],
   "recent_writing_scores": [
@@ -220,11 +225,11 @@
     "3. **Wrong verb form after auxiliary or complement structures** — e.g., \"allows models handling\" instead of \"allows models to handle,\" and \"while uses\" instead of \"while using.\" Student needs reinforcement of infinitive and gerund complement rules in English."
   ],
   "pending_evaluation": {
-    "session_num": 31,
+    "session_num": 32,
     "topic": "data science",
-    "subtopic": "feature engineering",
-    "article": "**Feature Engineering: The Hidden Work Behind Accurate Models**\n\nIn machine learning, algorithms often receive the most attention. Data scientists debate whether to use gradient boosting or neural networks, tune hyperparameters carefully, and benchmark model performance obsessively. Yet experienced practitioners know a quieter truth: the quality of your features matters more than the sophistication of your algorithm.\n\nFeature engineering is the process of transforming raw data into inputs that help a model learn patterns more effectively. It sits between data cleaning and model training, and it requires both technical skill and domain knowledge. A feature is simply a variable you feed into a model. The art lies in deciding which variables to create, combine, or transform.\n\nConsider a real-world example. Imagine you are building a model to predict monthly sales revenue for a B2B software company. Your raw data includes the date of each deal, the contract value, and the customer's industry. On their own, these fields are useful. But with thoughtful feature engineering, you can extract much more signal. From the date, you might create features like \"day of the quarter\" or \"days until fiscal year end.\" These capture the well-known phenomenon of end-of-quarter sales spikes. From the contract value, you might apply a logarithmic transformation to reduce the influence of extreme outliers. From the industry field, you might encode it using historical average deal sizes rather than simple category labels. This is called target encoding.\n\nInteraction features are another powerful technique. Instead of giving a model \"contract value\" and \"sales cycle length\" separately, you might divide one by the other to create \"revenue per day of effort.\" This single number often carries more predictive power than either variable alone.\n\nThe risks of poor feature engineering are real. If you create features using information that would not be available at prediction time, you introduce data leakage. For instance, including a customer's total lifetime value at the time of prediction — when that figure includes future purchases — will inflate your model's apparent accuracy. In production, however, the model will fail consistently.\n\nFeature selection also matters. Including too many irrelevant or redundant features can reduce model performance and slow down training. Techniques like recursive feature elimination or SHAP value analysis help identify which features actually contribute to predictions.\n\nFeature engineering is not a one-time task. As business conditions change, so do the signals in your data. A feature that was highly predictive in 2021 may be irrelevant today. The best data scientists treat feature engineering as an ongoing discipline — one that connects statistical methods to real business logic.",
-    "writing_task": "Write **2–3 sentences** summarizing the main argument of the article.\n\nYour summary should answer these three questions in your own words:\n- What is feature engineering?\n- Why is it more important than people often think?\n- What happens when it is done poorly?\n\nTry to write complete, clear sentences. Do not copy sentences directly from the article. Use your own words as much as possible.",
-    "date": "2026-08-14"
+    "subtopic": "model evaluation metrics",
+    "article": "**Choosing the Right Metric: Why Accuracy Alone Can Mislead You**\n\nWhen data scientists evaluate a machine learning model, the first instinct is often to check accuracy. It is simple, intuitive, and easy to explain to stakeholders. However, accuracy can be deeply misleading — especially when the data is imbalanced. Understanding why requires looking at what accuracy actually measures and what it ignores.\n\nConsider a fraud detection model. Suppose only 2% of transactions in your dataset are fraudulent. A model that simply classifies every transaction as \"not fraud\" will achieve 98% accuracy. On paper, that sounds excellent. In practice, the model is completely useless. It catches zero fraud cases. This is the accuracy paradox, and it is one of the most common traps in applied machine learning.\n\nTo move beyond this trap, practitioners rely on metrics that are more sensitive to the specific problem at hand. Precision and recall are two of the most important. Precision answers the question: of all the cases the model flagged as positive, how many were actually positive? Recall answers a different question: of all the actual positive cases, how many did the model successfully identify?\n\nThese two metrics often pull in opposite directions. If you increase the model's sensitivity to catch more fraud, you typically flag more false positives — legitimate transactions incorrectly marked as suspicious. That hurts precision. The F1-score combines both metrics into a single number, offering a balanced view when neither precision nor recall should dominate.\n\nHowever, even F1 is not always the right choice. In medical diagnostics, missing a real cancer case is far more costly than a false alarm. Here, recall becomes the priority metric. In email spam filtering, flooding the inbox with false positives is annoying but not dangerous, so precision might matter more. The right metric depends on the cost of each type of error, not on mathematical elegance.\n\nThe AUC-ROC curve offers another useful perspective. It measures how well a model separates positive and negative cases across all possible classification thresholds. An AUC score of 0.5 means the model performs no better than random guessing. A score of 1.0 means perfect separation. In practice, scores between 0.75 and 0.90 are considered strong for most business applications.\n\nThe key takeaway for any practitioner is this: model evaluation is a business decision, not just a statistical exercise. Before selecting a metric, ask what kind of error is more costly for the organization. Define success in terms of outcomes, not just numbers. A model with 85% accuracy might be far inferior to one with 78% accuracy but dramatically better recall in the cases that matter most.\n\nIn short, the metric you choose shapes the model you build. Choose wisely.",
+    "writing_task": "Write **2–3 sentences** summarizing the main argument of the article. In your sentences, explain **why accuracy alone is not enough** to evaluate a model and **what data scientists should consider instead**. Try to use at least one of these words: *metric*, *error*, *depends*.\n\n**Example starter (optional):** *\"The article argues that accuracy alone...\"*",
+    "date": "2026-08-17"
   }
 }
