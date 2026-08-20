@@ -1,8 +1,8 @@
 {
   "reading_level": 1,
   "writing_level": 1,
-  "session_count": 34,
-  "last_session_date": "2026-08-19",
+  "session_count": 35,
+  "last_session_date": "2026-08-20",
   "topic_history": [
     {
       "topic": "data science",
@@ -173,6 +173,11 @@
       "topic": "data science",
       "subtopic": "A/B testing methodology",
       "date": "2026-08-19"
+    },
+    {
+      "topic": "data science",
+      "subtopic": "causal inference",
+      "date": "2026-08-20"
     }
   ],
   "recent_writing_scores": [
@@ -235,11 +240,11 @@
     "3. **Wrong verb form after auxiliary or complement structures** — e.g., \"allows models handling\" instead of \"allows models to handle,\" and \"while uses\" instead of \"while using.\" Student needs reinforcement of infinitive and gerund complement rules in English."
   ],
   "pending_evaluation": {
-    "session_num": 34,
+    "session_num": 35,
     "topic": "data science",
-    "subtopic": "A/B testing methodology",
-    "article": "**Why Most A/B Tests Fail Before They Start**\n\nA/B testing sounds simple: show version A to one group, show version B to another, and measure which performs better. In practice, however, most failed experiments are not caused by bad ideas. They are caused by poor experimental design decisions made before the test even begins.\n\nOne of the most common mistakes is running a test without calculating the required sample size in advance. Imagine an e-commerce company that tests a new checkout button. After three days, the new button shows a 15% improvement in conversions, and the team celebrates. But if the test only collected 200 sessions per variant, the result is almost certainly noise. Statistical significance requires enough observations to distinguish a real effect from random variation. A proper power analysis — conducted before launch — tells you exactly how many users you need.\n\nRelated to sample size is the concept of statistical power. Power is the probability that your test will detect a real effect if one actually exists. Most practitioners target 80% power, meaning there is a 20% chance of missing a true improvement. If you run underpowered tests, you risk making decisions based on false negatives. This is expensive in business settings, where an overlooked improvement in conversion rate can represent millions in lost revenue.\n\nAnother critical issue is test duration. Many teams stop tests too early, a behavior called \"peeking.\" When you check results daily and stop as soon as significance appears, you inflate your false positive rate dramatically. Research shows that early stopping can cause false positive rates to jump from the intended 5% to over 25%. The correct approach is to define your test duration before launch and commit to it, regardless of early results.\n\nNovelty effect is another trap. When users first encounter a new design or feature, they may engage with it simply because it is new. This engagement fades over time and does not reflect long-term behavior. A test that runs for only 48 hours may capture peak novelty engagement, producing results that disappear after the product ships to all users.\n\nFinally, teams must consider segment interference. In many business platforms, users interact with each other or share resources. If a pricing test leaks information between the control and treatment groups — for example, through shared team accounts — the groups are no longer independent. This contamination invalidates the comparison entirely.\n\nGood A/B testing is less about running experiments and more about protecting the integrity of each experiment. The teams that get the most value from testing are not necessarily the ones with the most creative hypotheses. They are the ones with the strongest experimental discipline.",
-    "writing_task": "Choose **one** of the following concepts from the article and write **2–3 sentences** explaining it in your own words. Do not copy sentences from the text. Use simple, clear language.\n\n**Option A:** Explain what statistical power means and why it matters for business decisions.\n**Option B:** Explain what \"peeking\" is and why it is a problem in A/B testing.\n**Option C:** Explain what the novelty effect is and how it can mislead a team.\n\n**Helpful sentence starters:**\n- *\"Statistical power is...\"*\n- *\"Peeking happens when...\"*\n- *\"The novelty effect occurs when...\"*\n- *\"This is a problem because...\"*\n- *\"For example, if a company...\"*",
-    "date": "2026-08-19"
+    "subtopic": "causal inference",
+    "article": "**Beyond Correlation: How Causal Inference Is Changing Data Science**\n\nFor decades, data scientists relied on a simple but powerful tool: correlation. If two variables moved together, models could use that relationship to make predictions. This approach works well in stable environments. But it breaks down when you need to answer a different kind of question — not \"what will happen?\" but \"what will happen *because* of this action?\"\n\nThis is exactly the problem that causal inference was designed to solve. Instead of simply measuring associations, causal methods try to estimate the effect of a specific intervention. Think of it this way: a retail company notices that customers who receive discount emails tend to spend more. But does the email *cause* higher spending, or do high-spending customers simply receive more emails? Correlation alone cannot answer this, which is why many marketing decisions built on correlational models fail to deliver the expected return on investment.\n\nTo answer causal questions rigorously, data scientists use several frameworks. The most well-known is the potential outcomes framework, developed by statistician Donald Rubin. This framework imagines two parallel worlds: one where a person receives a treatment and one where they do not. The causal effect is the difference in outcomes between these two worlds. Of course, we can never observe both worlds for the same person — a limitation called the *fundamental problem of causal inference*.\n\nTo work around this limitation, practitioners use techniques such as randomized controlled trials (RCTs), difference-in-differences, instrumental variables, and regression discontinuity. Each method makes different assumptions about how the data was generated, which means choosing the wrong method can produce biased results even with large datasets.\n\nIn sales compensation, for example, a company might want to know whether increasing commission rates actually drives more revenue. Running an RCT — randomly assigning different commission structures to sales representatives — is one approach. However, this is often impractical or politically sensitive, which leads analysts to rely on observational methods instead.\n\nOne increasingly popular technique is the use of synthetic controls, a method that constructs a \"comparison version\" of the treated unit using weighted combinations of untreated units. This approach is particularly useful when only one or a few units receive the treatment, such as a single market or business region.\n\nCausal inference is not magic. It requires strong domain knowledge, careful assumption-checking, and honest communication of uncertainty. But when applied well, it allows decision-makers to move beyond passive observation and start asking better questions about cause and effect — questions that drive more confident, evidence-based action.",
+    "writing_task": "Write **2–3 sentences** summarizing the main argument of the article.\n\nIn your summary, make sure you address:\n- **Why** correlation is not enough for business decisions\n- **What** causal inference allows analysts to do differently\n- **One example** from the article (marketing, sales compensation, or synthetic controls)\n\nWrite your answer below. Try to use the phrase **\"allows analysts to\"** naturally in one of your sentences.",
+    "date": "2026-08-20"
   }
 }
