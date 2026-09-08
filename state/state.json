@@ -1,8 +1,8 @@
 {
   "reading_level": 1,
   "writing_level": 1,
-  "session_count": 47,
-  "last_session_date": "2026-09-07",
+  "session_count": 48,
+  "last_session_date": "2026-09-08",
   "topic_history": [
     {
       "topic": "data science",
@@ -238,6 +238,11 @@
       "topic": "data science",
       "subtopic": "ML model deployment",
       "date": "2026-09-07"
+    },
+    {
+      "topic": "data science",
+      "subtopic": "data quality and governance",
+      "date": "2026-09-08"
     }
   ],
   "recent_writing_scores": [
@@ -300,11 +305,11 @@
     "3. **Wrong verb form after auxiliary or complement structures** — e.g., \"allows models handling\" instead of \"allows models to handle,\" and \"while uses\" instead of \"while using.\" Student needs reinforcement of infinitive and gerund complement rules in English."
   ],
   "pending_evaluation": {
-    "session_num": 47,
+    "session_num": 48,
     "topic": "data science",
-    "subtopic": "ML model deployment",
-    "article": "**From Notebook to Production: The Real Challenge of ML Model Deployment**\n\nBuilding a machine learning model is often the easiest part of a data scientist's job. Deploying that model so it works reliably in a live business environment — that is where most projects struggle.\n\nModel deployment means moving a trained model out of a development environment and into a system where it can make real-time predictions for actual users or business processes. This transition sounds straightforward, but in practice it involves coordination across engineering, operations, and business teams.\n\nConsider a common scenario: a data scientist builds a churn prediction model that achieves 87% accuracy in testing. The model looks excellent on paper. But when the team tries to deploy it, they discover the production database has a different data format than the training data. The model breaks immediately. This is called a **training-serving skew** — a mismatch between the data used to train the model and the data it receives in production.\n\nTo avoid these failures, many organizations now use **MLOps** practices. MLOps borrows ideas from DevOps, the engineering discipline focused on continuous software delivery. The goal is to automate and monitor the entire model lifecycle — from training and testing to deployment and ongoing performance tracking.\n\nOne critical component of MLOps is a **model registry**. Think of it like a version control system, but specifically for machine learning models. Instead of just saving a model file, a registry stores metadata such as the training date, the dataset version used, performance metrics, and the team member who approved it. Tools like MLflow and Amazon SageMaker Model Registry are widely used for this purpose.\n\nAnother key practice is **canary deployment**. Rather than replacing the old model with the new one all at once, teams route a small percentage of real traffic — say, 5% — to the new model first. If performance looks good after 48 hours, they gradually increase that percentage. This approach reduces risk significantly.\n\nMonitoring is equally important after deployment. Models can degrade over time due to **data drift** — when real-world data patterns change after the model was trained. For example, a sales forecasting model trained on pre-pandemic data became unreliable in 2020 because buying behavior changed dramatically. Teams that had monitoring systems in place caught this quickly. Teams that did not lost weeks before identifying the problem.\n\nIn practice, successful deployment requires more than technical skill. It requires clear documentation, cross-team communication, and agreed-upon performance thresholds that trigger a model refresh. Data scientists who understand deployment are far more valuable to their organizations than those who only know how to build models.",
-    "writing_task": "Choose **one** of the following concepts from the article and write **2–3 sentences** explaining it in your own words:\n\n- **Training-serving skew** — What is it, and why does it cause problems when a model goes live?\n- **Canary deployment** — How does this strategy work, and what problem does it solve?\n\nDo not copy sentences from the article. Use your own words. Write in simple, clear English. Focus on showing that you understood the concept, not on using complex grammar.",
-    "date": "2026-09-07"
+    "subtopic": "data quality and governance",
+    "article": "**Garbage In, Garbage Out: Why Data Quality Is a Business Problem, Not Just a Technical One**\n\nMost data teams understand the old saying: \"garbage in, garbage out.\" If the data entering a system is wrong, the results coming out will also be wrong. But in many organizations, data quality is still treated as a purely technical issue — something the engineering team should fix quietly in the background. This thinking is expensive and dangerous.\n\nAccording to Gartner, poor data quality costs organizations an average of $12.9 million per year. That number includes wasted analyst hours, bad business decisions, and failed automation projects. When a sales compensation model runs on inaccurate revenue data, for example, sales representatives may be paid incorrectly. This creates legal risk, damages trust, and slows down the entire revenue operations cycle.\n\nData governance is the framework that organizations use to manage data quality systematically. It defines who owns each dataset, who can access it, and who is responsible when something goes wrong. Without governance, data problems tend to multiply. Different teams create their own versions of the same data. Definitions become inconsistent. A \"customer\" in the marketing database might not match a \"customer\" in the finance system.\n\nOne common governance tool is the **data dictionary**. This is a document — or a dedicated software tool — that defines every key field in a database. It explains what the field means, what values are acceptable, and who maintains it. A well-maintained data dictionary sounds simple, but it can prevent enormous confusion. Imagine a sales analyst and a data scientist arguing about whether \"annual recurring revenue\" includes trial accounts or not. A clear data dictionary answers that question before it becomes a problem.\n\nAnother important practice is **data lineage tracking**. This means documenting where data comes from, how it moves through systems, and how it is transformed along the way. If a dashboard suddenly shows unexpected results, lineage tracking allows the team to trace the problem back to its source quickly. Without it, debugging a data pipeline can take days.\n\nReal-world governance programs also rely on **data stewards** — people in the business, not just in IT, who take responsibility for the quality of specific datasets. A revenue operations manager, for example, might serve as the data steward for the CRM data. They review anomalies, approve changes to field definitions, and communicate data issues to leadership.\n\nBuilding a data governance program takes time. But the alternative — running a business on unreliable data — is far more costly.",
+    "writing_task": "Read the article carefully. Then write **2–3 sentences** summarizing the main argument.\n\nYour summary should answer these questions:\n- What is the central problem the article describes?\n- Why does the author say this problem matters for business (not just for technical teams)?\n\nUse your own words. Do not copy sentences directly from the article. Try to use at least one of the vocabulary terms from the spotlight below.",
+    "date": "2026-09-08"
   }
 }
