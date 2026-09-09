@@ -1,8 +1,8 @@
 {
   "reading_level": 1,
   "writing_level": 1,
-  "session_count": 48,
-  "last_session_date": "2026-09-08",
+  "session_count": 49,
+  "last_session_date": "2026-09-09",
   "topic_history": [
     {
       "topic": "data science",
@@ -243,6 +243,11 @@
       "topic": "data science",
       "subtopic": "data quality and governance",
       "date": "2026-09-08"
+    },
+    {
+      "topic": "data science",
+      "subtopic": "dimensionality reduction",
+      "date": "2026-09-09"
     }
   ],
   "recent_writing_scores": [
@@ -305,11 +310,11 @@
     "3. **Wrong verb form after auxiliary or complement structures** — e.g., \"allows models handling\" instead of \"allows models to handle,\" and \"while uses\" instead of \"while using.\" Student needs reinforcement of infinitive and gerund complement rules in English."
   ],
   "pending_evaluation": {
-    "session_num": 48,
+    "session_num": 49,
     "topic": "data science",
-    "subtopic": "data quality and governance",
-    "article": "**Garbage In, Garbage Out: Why Data Quality Is a Business Problem, Not Just a Technical One**\n\nMost data teams understand the old saying: \"garbage in, garbage out.\" If the data entering a system is wrong, the results coming out will also be wrong. But in many organizations, data quality is still treated as a purely technical issue — something the engineering team should fix quietly in the background. This thinking is expensive and dangerous.\n\nAccording to Gartner, poor data quality costs organizations an average of $12.9 million per year. That number includes wasted analyst hours, bad business decisions, and failed automation projects. When a sales compensation model runs on inaccurate revenue data, for example, sales representatives may be paid incorrectly. This creates legal risk, damages trust, and slows down the entire revenue operations cycle.\n\nData governance is the framework that organizations use to manage data quality systematically. It defines who owns each dataset, who can access it, and who is responsible when something goes wrong. Without governance, data problems tend to multiply. Different teams create their own versions of the same data. Definitions become inconsistent. A \"customer\" in the marketing database might not match a \"customer\" in the finance system.\n\nOne common governance tool is the **data dictionary**. This is a document — or a dedicated software tool — that defines every key field in a database. It explains what the field means, what values are acceptable, and who maintains it. A well-maintained data dictionary sounds simple, but it can prevent enormous confusion. Imagine a sales analyst and a data scientist arguing about whether \"annual recurring revenue\" includes trial accounts or not. A clear data dictionary answers that question before it becomes a problem.\n\nAnother important practice is **data lineage tracking**. This means documenting where data comes from, how it moves through systems, and how it is transformed along the way. If a dashboard suddenly shows unexpected results, lineage tracking allows the team to trace the problem back to its source quickly. Without it, debugging a data pipeline can take days.\n\nReal-world governance programs also rely on **data stewards** — people in the business, not just in IT, who take responsibility for the quality of specific datasets. A revenue operations manager, for example, might serve as the data steward for the CRM data. They review anomalies, approve changes to field definitions, and communicate data issues to leadership.\n\nBuilding a data governance program takes time. But the alternative — running a business on unreliable data — is far more costly.",
-    "writing_task": "Read the article carefully. Then write **2–3 sentences** summarizing the main argument.\n\nYour summary should answer these questions:\n- What is the central problem the article describes?\n- Why does the author say this problem matters for business (not just for technical teams)?\n\nUse your own words. Do not copy sentences directly from the article. Try to use at least one of the vocabulary terms from the spotlight below.",
-    "date": "2026-09-08"
+    "subtopic": "dimensionality reduction",
+    "article": "**When Less Is More: The Power of Dimensionality Reduction in Data Science**\n\nModern datasets are often enormous — not just in the number of rows, but in the number of columns. A customer behavior dataset might contain hundreds of variables: purchase history, session duration, click patterns, demographic data, and more. Working with so many features creates serious problems for machine learning models, a challenge known as the *curse of dimensionality*.\n\nTo solve this problem, data scientists use a family of techniques called dimensionality reduction. The core idea is straightforward: reduce the number of input variables while preserving as much useful information as possible. This makes models faster to train, easier to interpret, and less prone to overfitting.\n\nThe most widely used method is Principal Component Analysis, or PCA. PCA works by identifying the directions in your data where variation is greatest. It then creates new variables — called principal components — that capture this variation in a compressed form. Importantly, these components are uncorrelated with each other, which helps models learn more efficiently. A common real-world application is image compression: a 1,000-pixel image can often be represented with just 50 components and still look nearly identical to the original.\n\nAnother popular technique is t-SNE, which stands for t-distributed Stochastic Neighbor Embedding. Unlike PCA, t-SNE is designed primarily for visualization. It maps high-dimensional data into two or three dimensions, allowing analysts to spot natural clusters that would otherwise be invisible. For example, a bioinformatics team might use t-SNE to visualize gene expression data from thousands of patients, revealing subgroups that respond differently to a treatment.\n\nAccording to recent benchmarks published by machine learning research groups, models trained on reduced feature sets frequently outperform those trained on the full data — especially when the original dataset contains many redundant or noisy variables. This result surprises many beginners, who assume that more data always means better performance.\n\nIt is also worth noting that dimensionality reduction is not a one-size-fits-all solution. Choosing between PCA, t-SNE, UMAP, or other methods depends heavily on your goal. PCA is ideal for preprocessing before modeling. t-SNE and UMAP are better suited for exploratory visualization. Applying the wrong method can distort the structure of your data, which leads to misleading conclusions.\n\nIn practice, dimensionality reduction works best when it is part of a thoughtful pipeline — not an afterthought. Before applying any technique, it is essential to understand your data, define your objective, and evaluate the results carefully.",
+    "writing_task": "Choose **one** of the following concepts from the article and write **2–3 sentences** describing it in your own words:\n\n- What PCA does and why it is useful\n- Why dimensionality reduction can actually *improve* model performance\n- The difference between PCA and t-SNE\n\n**Guidelines for your writing:**\n- Start your first sentence with: *\"PCA is a technique that…\"* or *\"Dimensionality reduction can improve performance because…\"* or *\"PCA and t-SNE are different because…\"*\n- Use a full subject in every clause — for example, write *\"because it reduces…\"* not *\"because reduces…\"*\n- Use *\"to + verb\"* to explain purpose — for example, *\"to compress data\"* not *\"for compressing data\"*\n- Do not start a clause with *\"what\"* when referring to a previous idea — use *\"which\"* instead",
+    "date": "2026-09-09"
   }
 }
