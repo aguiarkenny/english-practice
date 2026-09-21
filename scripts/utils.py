@@ -26,6 +26,16 @@ TOPIC_SUBTOPICS = {
         "data quality and governance",
         "dimensionality reduction",
         "Bayesian methods in practice",
+        "survival analysis",
+        "natural language processing for business",
+        "anomaly detection",
+        "recommender systems",
+        "experiment design and statistical power",
+        "model interpretability and explainability",
+        "data storytelling and visualization",
+        "graph analytics",
+        "reinforcement learning in business",
+        "synthetic data generation",
     ],
     "revenue operations": [
         "CRM data hygiene",
@@ -38,6 +48,16 @@ TOPIC_SUBTOPICS = {
         "quota setting methodologies",
         "go-to-market alignment",
         "RevOps metrics and KPIs",
+        "customer lifetime value modeling",
+        "sales velocity analysis",
+        "win/loss analysis",
+        "ideal customer profile definition",
+        "marketing and sales funnel optimization",
+        "tech stack integration and data flow",
+        "account-based marketing analytics",
+        "revenue forecasting accuracy",
+        "customer segmentation for sales",
+        "expansion revenue and upsell analytics",
     ],
     "sales compensation": [
         "commission plan design",
@@ -50,6 +70,16 @@ TOPIC_SUBTOPICS = {
         "non-recoverable draws",
         "MBO-based compensation",
         "multi-product commission stacking",
+        "comp plan modeling and scenario analysis",
+        "ramp periods for new hires",
+        "team vs individual incentive structures",
+        "sales crediting rules",
+        "split credit and overlay compensation",
+        "compensation plan communication",
+        "comp plan change management",
+        "equity vs cash tradeoffs in sales comp",
+        "compensation plan compliance and governance",
+        "incentive compensation software evaluation",
     ],
 }
 
@@ -93,19 +123,32 @@ def save_state(state: dict) -> None:
 
 
 def pick_topic(state: dict) -> tuple[str, str]:
-    """Pick the next topic+subtopic, rotating to avoid recent repetition."""
+    """Pick the next topic+subtopic, rotating areas evenly and avoiding recent repetition."""
     history = state.get("topic_history", [])
-    recent = [h["subtopic"] for h in history[-9:]] if history else []
+    recent_subtopics = {h["subtopic"] for h in history[-6:]} if history else set()
 
-    for topic in TOPICS:
+    # Determine which area to use next based on history count per area
+    area_counts = {t: 0 for t in TOPICS}
+    for h in history:
+        if h["topic"] in area_counts:
+            area_counts[h["topic"]] += 1
+
+    # Sort areas by count ascending so the least-used area goes first
+    sorted_areas = sorted(TOPICS, key=lambda t: area_counts[t])
+
+    for topic in sorted_areas:
         for subtopic in TOPIC_SUBTOPICS[topic]:
-            if subtopic not in recent:
+            if subtopic not in recent_subtopics:
                 return topic, subtopic
 
-    # All subtopics used — start over
-    topic = TOPICS[len(history) % len(TOPICS)]
-    subtopic = TOPIC_SUBTOPICS[topic][0]
-    return topic, subtopic
+    # All subtopics recently used — start over with least-used area
+    topic = sorted_areas[0]
+    used = {h["subtopic"] for h in history if h["topic"] == topic}
+    for subtopic in TOPIC_SUBTOPICS[topic]:
+        if subtopic not in used:
+            return topic, subtopic
+
+    return sorted_areas[0], TOPIC_SUBTOPICS[sorted_areas[0]][0]
 
 
 def get_writing_task_prompt(writing_level: int) -> str:
