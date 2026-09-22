@@ -1,8 +1,8 @@
 {
   "reading_level": 1,
   "writing_level": 1,
-  "session_count": 57,
-  "last_session_date": "2026-09-21",
+  "session_count": 58,
+  "last_session_date": "2026-09-22",
   "topic_history": [
     {
       "topic": "data science",
@@ -288,6 +288,11 @@
       "topic": "revenue operations",
       "subtopic": "CRM data hygiene",
       "date": "2026-09-21"
+    },
+    {
+      "topic": "sales compensation",
+      "subtopic": "commission plan design",
+      "date": "2026-09-22"
     }
   ],
   "recent_writing_scores": [
@@ -350,11 +355,11 @@
     "3. **Wrong verb form after auxiliary or complement structures** — e.g., \"allows models handling\" instead of \"allows models to handle,\" and \"while uses\" instead of \"while using.\" Student needs reinforcement of infinitive and gerund complement rules in English."
   ],
   "pending_evaluation": {
-    "session_num": 57,
-    "topic": "revenue operations",
-    "subtopic": "CRM data hygiene",
-    "article": "**Why CRM Data Hygiene Is a Revenue Problem, Not Just an IT Problem**\n\nMany sales and revenue operations teams treat CRM data hygiene as a technical maintenance task. They schedule quarterly cleanups, assign it to an analyst, and move on. But dirty data is not a database problem — it is a revenue problem. And the cost is measurable.\n\nResearch from Gartner estimates that poor data quality costs organizations an average of $12.9 million per year. In sales environments, the damage is direct. When a sales rep calls a contact who left the company six months ago, that is lost time. When a deal is logged under the wrong account, forecasting breaks down. When duplicate records inflate pipeline numbers, leadership makes decisions based on fiction.\n\nSo what does \"clean\" CRM data actually mean in practice? It means four things: accuracy, completeness, consistency, and timeliness.\n\n**Accuracy** means the information reflects reality. A contact's title, email, and company must match current facts. **Completeness** means all required fields are filled in. You cannot calculate sales cycle length if the opportunity close date is missing. **Consistency** means the same data follows the same format across records. For example, \"United States,\" \"US,\" and \"U.S.A.\" all refer to the same country, but they create three different values in a filter. **Timeliness** means the data is updated regularly. A record that was accurate in January may be completely wrong by July.\n\nRevenue operations teams can address these issues through a combination of process, automation, and governance. On the process side, sales reps need clear data entry standards. If the rules are ambiguous, the data will be inconsistent. On the automation side, tools like Salesforce duplicate management rules or enrichment platforms like ZoomInfo and Clearbit can catch problems before they enter the system. On the governance side, someone must own data quality. Without ownership, nothing improves.\n\nOne practical example: a mid-size SaaS company reduced its pipeline forecast error by 18% after implementing a mandatory field validation rule in Salesforce. Reps could not advance a deal to the \"Proposal\" stage without entering a validated contact email and a primary decision-maker name. The rule was simple, but the impact on forecast accuracy was significant.\n\nData hygiene is not glamorous work. But it is foundational. Clean data enables accurate forecasting, fair sales compensation calculations, and meaningful performance reporting. Without it, even the most sophisticated revenue analytics tools produce unreliable results.\n\nThe message for revenue operations professionals is clear: treat data quality as a business-critical asset, not an afterthought.",
-    "writing_task": "The article explains four qualities that define clean CRM data: accuracy, completeness, consistency, and timeliness. Choose **one** of these four qualities and write **2–3 sentences** explaining what it means in your own words. Include a real or realistic example from your own work experience, or invent one that feels true to a sales or data context. Do not copy sentences from the article — use your own words as much as possible.",
-    "date": "2026-09-21"
+    "session_num": 58,
+    "topic": "sales compensation",
+    "subtopic": "commission plan design",
+    "article": "**Commission Plan Design: Why Simplicity Outperforms Complexity**\n\nMany sales leaders believe that a more detailed commission plan will drive better results. The logic seems reasonable: if you reward every behavior you want, salespeople will perform every behavior you need. In practice, however, the opposite is often true. Overly complex commission plans confuse sales reps, reduce motivation, and ultimately hurt revenue performance.\n\nA well-designed commission plan serves two core purposes. First, it compensates salespeople fairly for their contribution. Second, it directs their attention toward the company's most important business goals. When a plan tries to do too much — rewarding product mix, deal size, contract length, customer segment, and quarterly timing all at once — reps lose sight of what actually matters.\n\nConsider a mid-sized SaaS company that implemented a plan with seven different accelerators and four separate quota components. Their sales team spent more time calculating potential commissions than closing deals. Quota attainment dropped 18% in the first half of the year. After simplifying to two components — new business revenue and net revenue retention — attainment recovered and average deal size increased by 12%.\n\nThe most effective commission structures share several common features. They use a clear on-target earnings (OTE) split, typically 50/50 or 60/40 between base salary and variable pay. They tie the majority of variable compensation — usually 70% or more — to one or two primary metrics. They set quota at a level where roughly 60–70% of the sales force can achieve it with strong effort. And they include accelerators that reward overperformance, not just average results.\n\nTiming also matters. Plans that pay monthly tend to reinforce short-term behaviors. Annual plans, on the other hand, give reps less frequent feedback and can reduce motivation during slow quarters. Quarterly commission periods have become the industry standard for many B2B sales teams because they balance accountability with a reasonable planning horizon.\n\nOne practical test for any commission plan is what compensation professionals call the \"cocktail party test.\" Can a sales rep explain their commission structure to a friend in under two minutes? If the answer is no, the plan is probably too complex. Transparency builds trust, and trust drives performance.\n\nFinally, plan design should never happen in isolation. The most successful companies involve sales leadership, finance, and HR in the process. They also review their plans annually and adjust them as business priorities shift. A commission plan is not a permanent contract. It is a living tool that should evolve alongside your go-to-market strategy.",
+    "writing_task": "Write **2–3 sentences** summarizing the main argument of the article.\n\nIn your sentences, address the following:\n- What is the article's central claim about commission plan complexity?\n- What evidence or example does the author use to support this claim?\n- What does the article recommend as an alternative approach?\n\nWrite your sentences in your own words. Do not copy directly from the text.",
+    "date": "2026-09-22"
   }
 }
