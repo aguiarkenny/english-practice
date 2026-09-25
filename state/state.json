@@ -1,8 +1,8 @@
 {
   "reading_level": 1,
   "writing_level": 1,
-  "session_count": 60,
-  "last_session_date": "2026-09-24",
+  "session_count": 61,
+  "last_session_date": "2026-09-25",
   "topic_history": [
     {
       "topic": "data science",
@@ -303,6 +303,11 @@
       "topic": "sales compensation",
       "subtopic": "SPIFs and accelerators",
       "date": "2026-09-24"
+    },
+    {
+      "topic": "revenue operations",
+      "subtopic": "lead scoring models",
+      "date": "2026-09-25"
     }
   ],
   "recent_writing_scores": [
@@ -365,11 +370,11 @@
     "3. **Wrong verb form after auxiliary or complement structures** — e.g., \"allows models handling\" instead of \"allows models to handle,\" and \"while uses\" instead of \"while using.\" Student needs reinforcement of infinitive and gerund complement rules in English."
   ],
   "pending_evaluation": {
-    "session_num": 60,
-    "topic": "sales compensation",
-    "subtopic": "SPIFs and accelerators",
-    "article": "**SPIFs and Accelerators: The Short-Term Levers Behind Sales Performance**\n\nSales compensation plans are designed to drive consistent behavior over a full year. But sometimes, companies need results faster. That is where SPIFs and accelerators come in.\n\nA SPIF — which stands for Sales Performance Incentive Fund — is a short-term cash bonus or reward given to salespeople for achieving a specific goal. SPIFs are separate from the standard compensation plan. They typically last a few days, a week, or a quarter. A common example: a software company launches a new product in March and wants to build early momentum. The company offers a $500 SPIF to any rep who closes three deals on that product before the end of the month. The goal is focused, the timeline is tight, and the reward is immediate.\n\nSPIFs are powerful because they create urgency. Sales reps respond to short deadlines and visible rewards. However, companies must use SPIFs carefully. If they are overused, reps start to wait for SPIFs before selling anything. This behavior is sometimes called \"sandbagging.\" Research from the sales consulting firm Alexander Group suggests that more than four SPIFs per year can reduce their overall effectiveness.\n\nAccelerators work differently. An accelerator is a higher commission rate that activates after a salesperson reaches a specific performance threshold. For example, a rep might earn a standard 8% commission on all deals up to their quota. Once they exceed 100% of quota, the commission rate jumps to 12%. Above 120% of quota, it goes up to 16%. These increasing rates reward top performance and encourage reps not to stop pushing after they hit their target.\n\nIn practice, accelerators serve two important business functions. First, they retain high performers. A rep earning 16% commission on over-quota deals has a strong financial reason to stay with the company. Second, they help companies capture additional revenue that would otherwise be left on the table. If a rep closes $2 million above quota, even a 4% incremental commission cost is easily justified.\n\nBoth tools — SPIFs and accelerators — are part of a broader strategy called incentive compensation management. Revenue operations teams are responsible for designing these structures carefully. A well-designed SPIF drives a specific short-term behavior. A well-designed accelerator sustains long-term excellence. Used together, they can balance immediate business needs with ongoing performance culture.\n\nThe challenge for any RevOps or compensation analyst is knowing when to use which tool. SPIFs answer the question: *What do we need this month?* Accelerators answer the question: *How do we keep our best people selling at their best?* Understanding the difference is essential for building a compensation plan that actually works.",
-    "writing_task": "Read the article carefully. Then write **2–3 sentences** summarizing the main argument.\n\nYour sentences should answer these questions:\n- What are SPIFs and accelerators used for?\n- How are they different from each other?\n- Why do companies need both tools?\n\nWrite in your own words. Do not copy sentences directly from the article. Use simple, clear language.\n\n**Example structure to follow:**\n*\"SPIFs are used to... Accelerators, on the other hand, work by... Together, these two tools help companies...\"*",
-    "date": "2026-09-24"
+    "session_num": 61,
+    "topic": "revenue operations",
+    "subtopic": "lead scoring models",
+    "article": "**Lead Scoring Models: Turning Signals Into Sales Priorities**\n\nEvery sales team faces the same challenge: too many leads, too little time. A sales representative who contacts every lead equally is wasting effort. Lead scoring models solve this problem by assigning a numerical value to each lead based on how likely they are to become a paying customer.\n\nThe basic idea is straightforward. A lead scoring model collects data points about a prospect and converts them into a score. Higher scores indicate stronger purchase intent or better fit. Sales teams then prioritize the leads with the highest scores, focusing their energy where it matters most.\n\nThere are two main types of data that feed into these models. The first is **demographic and firmographic data** — information about who the lead is. This includes job title, company size, industry, and geographic location. For example, a VP of Sales at a 500-person SaaS company might score higher than an intern at a small retail shop, simply because they match the ideal customer profile more closely.\n\nThe second type is **behavioral data** — information about what the lead has done. Has the lead visited the pricing page three times this week? Did they download a product comparison guide? Did they open four emails in a row? These actions signal strong interest. Behavioral signals are often more predictive than demographic data alone, because they show active engagement rather than just potential fit.\n\nMany modern revenue operations teams combine both types into a **hybrid scoring model**. They assign point values to specific actions and attributes. For instance, visiting the pricing page might be worth 15 points, while downloading a whitepaper could be worth 10. A job title match might add 20 points, and a company size match might add 15. When a lead crosses a certain threshold — say, 60 points — they are flagged as a Marketing Qualified Lead, or MQL, and passed to the sales team.\n\nHowever, traditional rule-based models have a known limitation. They rely on human judgment to define which signals matter and how much weight each one carries. This process can introduce bias and become outdated quickly. A rule written in January may no longer reflect buying behavior in September.\n\nFor this reason, many organizations are moving toward **machine learning-based scoring models**. These models analyze historical conversion data to identify which combinations of signals actually predicted closed deals in the past. The model learns from real outcomes rather than assumptions. Companies like HubSpot and Salesforce now offer built-in predictive scoring tools that update automatically as new data flows in.\n\nThe result is a smarter, more dynamic prioritization system. Sales teams spend less time chasing cold leads and more time closing warm ones. For revenue operations professionals, building and maintaining an accurate lead scoring model is no longer optional — it is a core competency.",
+    "writing_task": "Read the article carefully. Then write **2–3 sentences** that summarize the main argument of the text.\n\nYour sentences should answer these questions:\n- **What is a lead scoring model and why does it matter?**\n- **What are the two main types of data used?**\n- **What is the key difference between rule-based models and machine learning models?**\n\nUse your own words. Do not copy sentences directly from the article. Keep your sentences short and clear.",
+    "date": "2026-09-25"
   }
 }
