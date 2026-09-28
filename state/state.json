@@ -1,8 +1,8 @@
 {
   "reading_level": 1,
   "writing_level": 1,
-  "session_count": 61,
-  "last_session_date": "2026-09-25",
+  "session_count": 62,
+  "last_session_date": "2026-09-28",
   "topic_history": [
     {
       "topic": "data science",
@@ -308,6 +308,11 @@
       "topic": "revenue operations",
       "subtopic": "lead scoring models",
       "date": "2026-09-25"
+    },
+    {
+      "topic": "sales compensation",
+      "subtopic": "quota attainment analysis",
+      "date": "2026-09-28"
     }
   ],
   "recent_writing_scores": [
@@ -370,11 +375,11 @@
     "3. **Wrong verb form after auxiliary or complement structures** — e.g., \"allows models handling\" instead of \"allows models to handle,\" and \"while uses\" instead of \"while using.\" Student needs reinforcement of infinitive and gerund complement rules in English."
   ],
   "pending_evaluation": {
-    "session_num": 61,
-    "topic": "revenue operations",
-    "subtopic": "lead scoring models",
-    "article": "**Lead Scoring Models: Turning Signals Into Sales Priorities**\n\nEvery sales team faces the same challenge: too many leads, too little time. A sales representative who contacts every lead equally is wasting effort. Lead scoring models solve this problem by assigning a numerical value to each lead based on how likely they are to become a paying customer.\n\nThe basic idea is straightforward. A lead scoring model collects data points about a prospect and converts them into a score. Higher scores indicate stronger purchase intent or better fit. Sales teams then prioritize the leads with the highest scores, focusing their energy where it matters most.\n\nThere are two main types of data that feed into these models. The first is **demographic and firmographic data** — information about who the lead is. This includes job title, company size, industry, and geographic location. For example, a VP of Sales at a 500-person SaaS company might score higher than an intern at a small retail shop, simply because they match the ideal customer profile more closely.\n\nThe second type is **behavioral data** — information about what the lead has done. Has the lead visited the pricing page three times this week? Did they download a product comparison guide? Did they open four emails in a row? These actions signal strong interest. Behavioral signals are often more predictive than demographic data alone, because they show active engagement rather than just potential fit.\n\nMany modern revenue operations teams combine both types into a **hybrid scoring model**. They assign point values to specific actions and attributes. For instance, visiting the pricing page might be worth 15 points, while downloading a whitepaper could be worth 10. A job title match might add 20 points, and a company size match might add 15. When a lead crosses a certain threshold — say, 60 points — they are flagged as a Marketing Qualified Lead, or MQL, and passed to the sales team.\n\nHowever, traditional rule-based models have a known limitation. They rely on human judgment to define which signals matter and how much weight each one carries. This process can introduce bias and become outdated quickly. A rule written in January may no longer reflect buying behavior in September.\n\nFor this reason, many organizations are moving toward **machine learning-based scoring models**. These models analyze historical conversion data to identify which combinations of signals actually predicted closed deals in the past. The model learns from real outcomes rather than assumptions. Companies like HubSpot and Salesforce now offer built-in predictive scoring tools that update automatically as new data flows in.\n\nThe result is a smarter, more dynamic prioritization system. Sales teams spend less time chasing cold leads and more time closing warm ones. For revenue operations professionals, building and maintaining an accurate lead scoring model is no longer optional — it is a core competency.",
-    "writing_task": "Read the article carefully. Then write **2–3 sentences** that summarize the main argument of the text.\n\nYour sentences should answer these questions:\n- **What is a lead scoring model and why does it matter?**\n- **What are the two main types of data used?**\n- **What is the key difference between rule-based models and machine learning models?**\n\nUse your own words. Do not copy sentences directly from the article. Keep your sentences short and clear.",
-    "date": "2026-09-25"
+    "session_num": 62,
+    "topic": "sales compensation",
+    "subtopic": "quota attainment analysis",
+    "article": "**When 70% Means Different Things: The Hidden Complexity of Quota Attainment Analysis**\n\nQuota attainment seems simple on the surface. A sales rep has a target. They either hit it or they don't. But experienced revenue operations professionals know that a single attainment number can hide more than it reveals.\n\nConsider two sales reps at a SaaS company. Both finish the quarter at 85% of quota. At first glance, they look identical. But Rep A closed three large enterprise deals that came in slightly below forecast. Rep B closed twelve smaller deals, spread evenly across the quarter. Their attainment percentages match, but their selling behaviors, risk profiles, and value to the business are completely different.\n\nThis is why quota attainment analysis — when done well — goes far beyond calculating a percentage. It asks: *Who hit quota, when did they hit it, and how did they get there?*\n\n**Distribution matters more than the average**\n\nMany sales leaders focus on average attainment across the team. This is a mistake. A team where 60% of reps hit quota and 40% miss by a small margin looks very different from a team where 20% are massive overachievers and 80% are underperformers. The average might be identical. The health of the sales team is not.\n\nA useful benchmark from industry research suggests that a well-designed quota should produce attainment rates between 60% and 70% of the sales force hitting their number. If too many reps hit quota, the target was probably too easy. If too few hit it, the quota may be unrealistic — or the compensation plan may need review.\n\n**Timing reveals pipeline health**\n\nAnother dimension is *when* attainment happens within the quarter. Reps who consistently close most of their business in the final two weeks of the quarter create a pattern called \"late-quarter loading.\" This is a warning signal. It often indicates poor pipeline discipline, excessive discounting under end-of-quarter pressure, or customers who have learned to wait for deals.\n\nBy contrast, reps who attain quota with consistent pacing throughout the quarter are usually better forecasters and more reliable revenue contributors.\n\n**Segmenting attainment by cohort**\n\nAdvanced teams break down attainment by cohort: tenure, territory, product line, or customer segment. A new rep with 75% attainment in their second quarter may be outperforming a veteran with the same percentage. Context transforms the meaning of the number.\n\nRevenue operations teams that build attainment dashboards should always include at least three views: distribution curves, timing patterns, and cohort comparisons. A single percentage shown in isolation is not analysis. It is just arithmetic.\n\nThe goal is not to punish complexity — it is to understand it. Better attainment analysis leads to better quota design, fairer compensation, and ultimately, a more predictable revenue engine.",
+    "writing_task": "Write **2–3 sentences** summarizing the main argument of the article.\n\nYour sentences should answer these questions:\n- What is the article's central claim about quota attainment numbers?\n- What should analysts look at **instead of** (or **in addition to**) a single percentage?\n\nUse your own words. Do not copy sentences directly from the text. You may use simple, direct language — this is a Level 1 writing task.\n\n**Example of the level expected:**\n*\"The article says that one number is not enough to understand sales performance. Teams should also look at [X], [Y], and [Z].\"*",
+    "date": "2026-09-28"
   }
 }
