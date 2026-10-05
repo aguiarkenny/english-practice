@@ -1,8 +1,8 @@
 {
   "reading_level": 1,
   "writing_level": 1,
-  "session_count": 66,
-  "last_session_date": "2026-10-02",
+  "session_count": 67,
+  "last_session_date": "2026-10-05",
   "topic_history": [
     {
       "topic": "data science",
@@ -333,6 +333,11 @@
       "topic": "sales compensation",
       "subtopic": "commission plan design",
       "date": "2026-10-02"
+    },
+    {
+      "topic": "revenue operations",
+      "subtopic": "pipeline forecasting",
+      "date": "2026-10-05"
     }
   ],
   "recent_writing_scores": [
@@ -395,11 +400,11 @@
     "3. **Wrong verb form after auxiliary or complement structures** — e.g., \"allows models handling\" instead of \"allows models to handle,\" and \"while uses\" instead of \"while using.\" Student needs reinforcement of infinitive and gerund complement rules in English."
   ],
   "pending_evaluation": {
-    "session_num": 66,
-    "topic": "sales compensation",
-    "subtopic": "commission plan design",
-    "article": "**Commission Plan Design: Getting the Structure Right**\n\nA commission plan is more than a payment formula. It is a strategic tool that shapes how salespeople think, prioritize, and behave every single day. When designed well, it aligns the sales team's efforts with company goals. When designed poorly, it can drive the wrong behaviors — and cost the company millions.\n\nMost commission plans share a few core components. The first is the **on-target earnings (OTE)**, which is the total compensation a salesperson earns when they hit 100% of their quota. For example, a mid-market account executive might have an OTE of $120,000, split evenly between a base salary of $60,000 and a target commission of $60,000.\n\nThe second component is the **commission rate**. This is the percentage of revenue — or sometimes margin — that the salesperson earns per deal. A flat commission rate is the simplest structure: for instance, 8% on every dollar of revenue closed. However, many companies prefer a **tiered rate structure**, where the rate increases as the rep exceeds quota. A rep might earn 8% up to 100% of quota, then 12% on every dollar above that threshold. This accelerator model rewards overperformance and motivates top sellers to keep pushing after they hit their target.\n\nThe third key decision involves **what gets commissioned**. Should the plan pay on bookings, revenue, or cash collected? Each choice creates different incentives. Paying on bookings can drive reps to close deals quickly, sometimes at the expense of deal quality. Paying on cash collected, on the other hand, encourages reps to care about the customer's ability to pay — which reduces bad debt.\n\nPlan complexity is a real risk. Research from the Alexander Group, a sales compensation consulting firm, suggests that reps disengage when a plan has more than three or four primary metrics. If a rep must simultaneously track revenue, product mix, customer satisfaction scores, and contract length, cognitive overload sets in. They stop optimizing and start guessing.\n\nA well-known design principle in the field is the **80/20 rule of pay**: roughly 80% of a commission payout should come from one or two core metrics. The remaining 20% can reward secondary behaviors, such as selling a new product line or signing multi-year contracts.\n\nFinally, timing matters. Monthly commission payouts keep cash flow visible for reps and drive urgency. Quarterly payouts, by contrast, encourage reps to think in longer cycles — which may better match enterprise sales motions with longer deal timelines.\n\nThere is no single perfect commission plan. But there are clear principles that separate effective designs from costly ones.",
-    "writing_task": "Write **2–3 sentences** summarizing the main argument of the article. In your summary, answer these questions:\n\n- What is the purpose of a commission plan?\n- What are one or two design choices that make a plan effective?\n- What happens when a plan is too complex?\n\nTry to use your own words. Do not copy sentences directly from the article.",
-    "date": "2026-10-02"
+    "session_num": 67,
+    "topic": "revenue operations",
+    "subtopic": "pipeline forecasting",
+    "article": "**Why Your Pipeline Forecast Is Probably Wrong — And How to Fix It**\n\nMost sales teams have a forecasting problem. They track opportunities in their CRM, managers review the pipeline every week, and leadership still ends up surprised at the end of the quarter. The forecast said $2.4 million. The actual number was $1.7 million. This kind of gap is not just frustrating — it is expensive.\n\nPipeline forecasting is the process of estimating how much revenue a sales team will close within a specific time period. It sounds straightforward. In practice, it is one of the most difficult challenges in revenue operations.\n\nThe core problem is human bias. Salespeople are naturally optimistic. They include deals in their forecast because they *feel* good about them, not because the data supports it. A prospect replied to two emails and attended a demo — so the rep marks the deal as 70% likely to close. But two emails and a demo do not mean 70% probability. They mean the conversation has started.\n\nLeading revenue operations teams are moving away from gut-feel forecasting toward data-driven models. Instead of asking reps to assign probabilities, these teams analyze historical patterns. For example: deals that reach the proposal stage and involve a budget-holder in the conversation close at 43% on average. Deals at the same stage *without* a budget-holder close at only 19%. That difference changes everything about how you build your forecast.\n\nAnother critical factor is pipeline coverage. A general rule in B2B sales is that you need three to four times your quota in pipeline to reliably hit your number. If a team has a $1 million revenue target and only $2 million in pipeline, the math is already working against them. Coverage ratios help leaders identify problems early — before the quarter ends.\n\nVelocity is also important. Pipeline velocity measures how quickly deals move through the sales stages. A deal that sits in \"negotiation\" for 90 days is probably not going anywhere. Tracking average deal cycle time helps teams identify which opportunities are stalling and which are truly progressing.\n\nFinally, forecast accuracy improves when companies commit to a consistent methodology. Some teams use the category-based method — labeling deals as \"commit,\" \"best case,\" or \"pipeline.\" Others use statistical models that weight deals based on historical win rates, deal size, and engagement signals. Either approach can work, but only if everyone follows the same rules every week.\n\nThe bottom line is this: accurate forecasting is not about predicting the future perfectly. It is about building a system that reduces surprises and gives leadership enough time to react.",
+    "writing_task": "Write **2–3 sentences** summarizing the main argument of the article. Your summary should answer these three questions:\n\n1. What is the main problem with pipeline forecasting today?\n2. What do data-driven teams do differently?\n3. What is the goal of good forecasting, according to the article?\n\nWrite in your own words. Do not copy sentences directly from the text. Use simple, clear language.",
+    "date": "2026-10-05"
   }
 }
