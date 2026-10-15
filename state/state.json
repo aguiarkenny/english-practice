@@ -1,8 +1,8 @@
 {
   "reading_level": 1,
   "writing_level": 1,
-  "session_count": 74,
-  "last_session_date": "2026-10-14",
+  "session_count": 75,
+  "last_session_date": "2026-10-15",
   "topic_history": [
     {
       "topic": "data science",
@@ -373,6 +373,11 @@
       "topic": "sales compensation",
       "subtopic": "commission plan design",
       "date": "2026-10-14"
+    },
+    {
+      "topic": "revenue operations",
+      "subtopic": "pipeline forecasting",
+      "date": "2026-10-15"
     }
   ],
   "recent_writing_scores": [
@@ -435,11 +440,11 @@
     "3. **Wrong verb form after auxiliary or complement structures** — e.g., \"allows models handling\" instead of \"allows models to handle,\" and \"while uses\" instead of \"while using.\" Student needs reinforcement of infinitive and gerund complement rules in English."
   ],
   "pending_evaluation": {
-    "session_num": 74,
-    "topic": "sales compensation",
-    "subtopic": "commission plan design",
-    "article": "**Getting the Incentives Right: How Companies Design Commission Plans That Actually Work**\n\nA commission plan is more than a paycheck formula. It is a behavioral tool. When designed well, it directs salespeople toward the activities and outcomes a company needs most. When designed poorly, it creates unintended consequences — and those consequences can be expensive.\n\nMost commission plans share a common structure. A salesperson earns a base salary plus a variable component tied to performance. The variable portion is often called \"on-target variable\" or OTV. For example, if a sales rep has a total on-target earnings (OTE) of $120,000 and a 50/50 split, they receive $60,000 as base salary and $60,000 when they hit 100% of their quota.\n\nBut the real design decisions happen around the edges of that structure. One critical element is the **accelerator**. An accelerator increases the commission rate after a rep exceeds their quota. A plan might pay 5% on every dollar up to quota, then 8% on every dollar above it. This rewards top performers and encourages reps to keep selling even after they reach their target. Without accelerators, many reps stop pushing once they hit 100%.\n\nAnother key design choice is the **payout frequency**. Some companies pay commissions monthly, others quarterly. Monthly payouts keep salespeople motivated and give them faster feedback on their performance. Quarterly payouts, however, are often easier to administer and align better with deal cycles in enterprise sales. There is no universal right answer — the best choice depends on the sales motion.\n\n**Clawback provisions** are also worth understanding. A clawback allows a company to recover commission that was already paid if a customer cancels early or fails to pay. This protects the company from paying out on deals that do not generate real revenue. However, aggressive clawback policies can damage trust and morale, especially if the cancellation was not the rep's fault.\n\nOne common mistake in plan design is building too much complexity. A study by the Sales Management Association found that when a comp plan requires more than two pages to explain, rep understanding drops significantly. Lower understanding leads to weaker behavioral alignment. The plan stops working as intended.\n\nThe best commission plans share three qualities. First, they are simple enough that a rep can calculate their own earnings in their head. Second, they are fair — reps feel the plan reflects their effort and market conditions. Third, they are aligned with company goals, so what is good for the rep is also good for the business.\n\nGetting these elements right requires close collaboration between finance, revenue operations, and sales leadership. It is not a one-time exercise. Plans should be reviewed at least annually, and adjusted as business priorities shift.",
-    "writing_task": "Choose **one** of the following concepts from the article and write **2–3 sentences** explaining it in your own words:\n\n- **Accelerators** — What are they, and why do companies use them?\n- **Clawback provisions** — What is the purpose of a clawback, and what is one risk of using it?\n\nBe specific. Do not copy sentences from the article. Use your own words to show that you understood the concept. You may use this sentence starter if it helps:\n\n*\"An accelerator is a feature in a commission plan that...\"*\nor\n*\"A clawback provision allows a company to...\"*",
-    "date": "2026-10-14"
+    "session_num": 75,
+    "topic": "revenue operations",
+    "subtopic": "pipeline forecasting",
+    "article": "**Pipeline Forecasting: Why Most Sales Teams Are Flying Blind**\n\nEvery quarter, sales leaders face the same uncomfortable question: \"How confident are you in your forecast?\" For many organizations, the honest answer is \"not very.\" Pipeline forecasting is one of the most critical practices in revenue operations, yet it remains one of the most inaccurate.\n\nAt its core, pipeline forecasting means estimating how much revenue a company will close within a specific time period — usually a quarter. Sales teams do this by examining their current pipeline: the collection of active deals at various stages of the sales process. Each deal carries a potential value and a probability of closing. Multiply those two numbers across all deals, and you get a forecasted number.\n\nThe problem is that those probability estimates are often wrong. Many companies assign fixed probabilities to pipeline stages. For example, a deal in the \"Proposal Sent\" stage might automatically receive a 50% close probability. But research from Gartner shows that stage-based probability models can miss actual close rates by 30% or more. A deal sitting in \"Proposal Sent\" for 90 days is very different from one that entered that stage yesterday.\n\nThis is where modern revenue operations teams are changing the approach. Instead of relying only on pipeline stage, they use *deal-level signals* to build more accurate forecasts. These signals include: the number of stakeholders engaged on the buyer's side, recent email and meeting activity, how long a deal has been in its current stage, and whether the customer has reviewed a pricing document. Companies like Clari and Gong have built entire platforms around capturing and scoring these signals automatically.\n\nConsider a real example. A B2B software company noticed that deals where the legal team was engaged closed at a 70% rate, compared to a 35% rate for deals with no legal involvement. By adding \"legal engagement\" as a forecasting variable, their quarterly forecast accuracy improved from 72% to 88% within two quarters.\n\nForecast accuracy matters for more than just reporting. It directly affects headcount planning, inventory decisions, marketing spend, and sales compensation design. When forecasts are wrong, companies either over-hire or under-invest — both of which are costly mistakes.\n\nThe best revenue operations teams treat forecasting as a continuous process, not a monthly exercise. They review pipeline health weekly, challenge deals that show warning signs, and update their models as new data arrives. In today's competitive environment, accurate forecasting is not a luxury. It is a strategic advantage.",
+    "writing_task": "Choose **one** of the two concepts below and write **2–3 sentences** describing it in your own words. Use your own sentence structure — do not copy from the article.\n\n**Option A:** Explain why using only the pipeline stage to predict close probability can be a problem.\n\n**Option B:** Explain why forecast accuracy is important beyond just knowing how much revenue a company will close.\n\nTry to use at least one of the vocabulary terms from the Vocabulary Spotlight section below.",
+    "date": "2026-10-15"
   }
 }
