@@ -1,8 +1,8 @@
 {
   "reading_level": 1,
   "writing_level": 1,
-  "session_count": 75,
-  "last_session_date": "2026-10-15",
+  "session_count": 76,
+  "last_session_date": "2026-10-16",
   "topic_history": [
     {
       "topic": "data science",
@@ -378,6 +378,11 @@
       "topic": "revenue operations",
       "subtopic": "pipeline forecasting",
       "date": "2026-10-15"
+    },
+    {
+      "topic": "sales compensation",
+      "subtopic": "SPIFs and accelerators",
+      "date": "2026-10-16"
     }
   ],
   "recent_writing_scores": [
@@ -440,11 +445,11 @@
     "3. **Wrong verb form after auxiliary or complement structures** — e.g., \"allows models handling\" instead of \"allows models to handle,\" and \"while uses\" instead of \"while using.\" Student needs reinforcement of infinitive and gerund complement rules in English."
   ],
   "pending_evaluation": {
-    "session_num": 75,
-    "topic": "revenue operations",
-    "subtopic": "pipeline forecasting",
-    "article": "**Pipeline Forecasting: Why Most Sales Teams Are Flying Blind**\n\nEvery quarter, sales leaders face the same uncomfortable question: \"How confident are you in your forecast?\" For many organizations, the honest answer is \"not very.\" Pipeline forecasting is one of the most critical practices in revenue operations, yet it remains one of the most inaccurate.\n\nAt its core, pipeline forecasting means estimating how much revenue a company will close within a specific time period — usually a quarter. Sales teams do this by examining their current pipeline: the collection of active deals at various stages of the sales process. Each deal carries a potential value and a probability of closing. Multiply those two numbers across all deals, and you get a forecasted number.\n\nThe problem is that those probability estimates are often wrong. Many companies assign fixed probabilities to pipeline stages. For example, a deal in the \"Proposal Sent\" stage might automatically receive a 50% close probability. But research from Gartner shows that stage-based probability models can miss actual close rates by 30% or more. A deal sitting in \"Proposal Sent\" for 90 days is very different from one that entered that stage yesterday.\n\nThis is where modern revenue operations teams are changing the approach. Instead of relying only on pipeline stage, they use *deal-level signals* to build more accurate forecasts. These signals include: the number of stakeholders engaged on the buyer's side, recent email and meeting activity, how long a deal has been in its current stage, and whether the customer has reviewed a pricing document. Companies like Clari and Gong have built entire platforms around capturing and scoring these signals automatically.\n\nConsider a real example. A B2B software company noticed that deals where the legal team was engaged closed at a 70% rate, compared to a 35% rate for deals with no legal involvement. By adding \"legal engagement\" as a forecasting variable, their quarterly forecast accuracy improved from 72% to 88% within two quarters.\n\nForecast accuracy matters for more than just reporting. It directly affects headcount planning, inventory decisions, marketing spend, and sales compensation design. When forecasts are wrong, companies either over-hire or under-invest — both of which are costly mistakes.\n\nThe best revenue operations teams treat forecasting as a continuous process, not a monthly exercise. They review pipeline health weekly, challenge deals that show warning signs, and update their models as new data arrives. In today's competitive environment, accurate forecasting is not a luxury. It is a strategic advantage.",
-    "writing_task": "Choose **one** of the two concepts below and write **2–3 sentences** describing it in your own words. Use your own sentence structure — do not copy from the article.\n\n**Option A:** Explain why using only the pipeline stage to predict close probability can be a problem.\n\n**Option B:** Explain why forecast accuracy is important beyond just knowing how much revenue a company will close.\n\nTry to use at least one of the vocabulary terms from the Vocabulary Spotlight section below.",
-    "date": "2026-10-15"
+    "session_num": 76,
+    "topic": "sales compensation",
+    "subtopic": "SPIFs and accelerators",
+    "article": "**SPIFs and Accelerators: The Short-Term Levers of Sales Compensation**\n\nSales compensation plans are built for the long game. Base salaries provide stability, and commissions reward consistent performance over a quarter or a year. But sometimes, a sales organization needs to move faster. That is where SPIFs and accelerators come in.\n\nA SPIF — short for *Sales Performance Incentive Fund* — is a short-term bonus designed to drive a specific behavior quickly. Think of it as a targeted push. A company might run a SPIF for two weeks to move excess inventory, launch a new product, or win deals in a specific market segment. For example, a software company entering the healthcare vertical might offer a $500 SPIF for every net-new healthcare logo closed in Q3. The reward is immediate and separate from the regular commission structure.\n\nSPIFs work because they create urgency. Research from the Incentive Research Foundation shows that short-term incentives can increase sales activity by 20–30% during the promotion window. However, they come with risks. If used too often, reps begin to wait for SPIFs before closing deals they would have closed anyway. Compensation leaders call this \"cherry-picking,\" and it can seriously distort your pipeline data.\n\nAccelerators work differently. They are built directly into the commission plan, not added on top of it. An accelerator is a higher commission rate that activates once a rep crosses a performance threshold. A typical structure might look like this: a rep earns 8% commission on all revenue up to 100% of quota. Once they exceed 100%, the rate jumps to 12%. Above 150% of quota, it goes to 16%. Each step is an accelerator tier.\n\nThe logic behind accelerators is powerful. They make your top performers — the ones most likely to leave for a competitor — feel that exceptional effort has exceptional rewards. According to a 2023 Alexander Group survey, companies with strong accelerator structures reported 15% lower voluntary turnover among their top quartile of sellers.\n\nBut accelerators also require careful design. If the quota itself is set too low, accelerators become expensive very quickly. A rep who hits 200% of an easy quota may earn far more than the company planned. Revenue operations teams must model these scenarios in advance, stress-testing the plan against optimistic, realistic, and pessimistic performance distributions.\n\nIn practice, the best compensation plans use both tools with discipline. SPIFs handle the short-term, reactive needs of the business. Accelerators handle the long-term motivation architecture. When these two levers are aligned with company strategy, they can turn a good sales team into a great one.",
+    "writing_task": "Read the paragraph about accelerators carefully. Then write **2–3 sentences** answering this question:\n\n**What did you find most interesting about how accelerators work, and why do you think this design is important for a company's business results?**\n\nTry to use at least one of these words in your answer: *threshold*, *performance*, or *motivate/motivation*.\n\nWrite simply and clearly. You do not need to write long sentences — short and correct is better than long and confusing.",
+    "date": "2026-10-16"
   }
 }
