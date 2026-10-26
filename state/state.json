@@ -1,8 +1,8 @@
 {
   "reading_level": 1,
   "writing_level": 1,
-  "session_count": 81,
-  "last_session_date": "2026-10-23",
+  "session_count": 82,
+  "last_session_date": "2026-10-26",
   "topic_history": [
     {
       "topic": "data science",
@@ -408,6 +408,11 @@
       "topic": "revenue operations",
       "subtopic": "CRM data hygiene",
       "date": "2026-10-23"
+    },
+    {
+      "topic": "sales compensation",
+      "subtopic": "commission plan design",
+      "date": "2026-10-26"
     }
   ],
   "recent_writing_scores": [
@@ -470,11 +475,11 @@
     "3. **Wrong verb form after auxiliary or complement structures** — e.g., \"allows models handling\" instead of \"allows models to handle,\" and \"while uses\" instead of \"while using.\" Student needs reinforcement of infinitive and gerund complement rules in English."
   ],
   "pending_evaluation": {
-    "session_num": 81,
-    "topic": "revenue operations",
-    "subtopic": "CRM data hygiene",
-    "article": "**Dirty Data, Dirty Deals: Why CRM Hygiene Is a Revenue Problem**\n\nMost sales teams think of CRM data hygiene as an IT responsibility. They are wrong. Poor data quality in a CRM system is not just a technical inconvenience — it is a direct threat to revenue.\n\nConsider this scenario: a sales representative closes a deal with a company called \"Acme Corp.\" A colleague, working independently, has already logged the same company as \"ACME Corporation.\" Now the CRM contains two separate account records for the same customer. This duplication seems minor. But multiply it across thousands of records, and the consequences become serious.\n\nResearch from Gartner estimates that poor data quality costs organizations an average of $12.9 million per year. For revenue operations teams, the damage shows up in specific ways. Forecast reports become unreliable because pipeline data is incomplete or contradictory. Sales territories overlap when account ownership is unclear. Compensation calculations go wrong when deal attribution is tied to duplicate or orphaned records.\n\nCRM hygiene refers to the ongoing practice of keeping your CRM data accurate, complete, and consistent. It involves several key activities. Deduplication removes or merges duplicate records. Data validation ensures that new records meet required standards before they enter the system. Field standardization means that values like job titles, industries, or company sizes follow a consistent format. And data enrichment connects internal records with external sources to fill in missing information.\n\nOne common failure point is the lack of clear data ownership. When no one is accountable for a record's quality, everyone assumes someone else will fix it. Effective revenue operations teams solve this by assigning data stewards — people who are responsible for monitoring and maintaining data quality within specific segments or territories.\n\nAutomation can help, but it does not replace human judgment. Tools like Salesforce's duplicate management rules or third-party platforms like ZoomInfo and Clearbit can flag or enrich records automatically. However, a rule that merges two records incorrectly can cause more damage than the original duplicates. Human review remains essential.\n\nThe business case for investing in CRM hygiene is straightforward. Clean data improves forecast accuracy. It reduces friction in the handoff between marketing, sales, and customer success. It makes compensation plans easier to administer and harder to dispute. And it gives leadership the confidence to make decisions based on what the data actually says.\n\nCRM hygiene is not glamorous work. But in revenue operations, it is foundational. A pipeline built on dirty data is like a building constructed on unstable ground. It may look solid from the outside, but it will not hold under pressure.",
-    "writing_task": "Read the article carefully. Then write **2–3 sentences** that summarize the main argument.\n\nYour summary should answer these questions:\n- What is the central problem the article describes?\n- Why does this problem matter for revenue operations teams?\n- What does the article suggest as a solution or approach?\n\nWrite in your own words. Do not copy sentences directly from the article. Aim for clarity over complexity — one idea per sentence is ideal.",
-    "date": "2026-10-23"
+    "session_num": 82,
+    "topic": "sales compensation",
+    "subtopic": "commission plan design",
+    "article": "**The Mechanics of Commission Plan Design: Getting the Incentives Right**\n\nA well-designed commission plan does more than reward salespeople for closing deals. It shapes behavior, drives focus, and ultimately determines which customers a company wins. But many organizations underestimate how much the structure of a plan matters — not just the payout amounts.\n\nAt its core, a commission plan connects a rep's actions to a financial reward. The most common model is a percentage of revenue. For example, a rep who closes $100,000 in new business and earns a 5% commission takes home $5,000. Simple and transparent. But simplicity alone does not make a plan effective.\n\nOne critical design element is the **quota**. A quota sets the performance target a rep must reach before certain rewards kick in. Most companies pay a reduced rate below quota and a higher \"accelerator\" rate above it. This creates a strong incentive to push past the target, not just reach it. Research from the Alexander Group, a leading sales compensation consultancy, suggests that top-performing companies typically set quotas so that 60–70% of their sales force achieves the target in a given period. If too few reps hit quota, morale suffers. If too many do, the plan may not be stretching performance enough.\n\nAnother key decision is what to **measure**. Revenue is the most obvious metric, but it is not always the best one. Some companies commission on gross profit instead, which encourages reps to protect margins and avoid unnecessary discounting. Others add components for customer retention or product mix. For instance, a software company might pay higher rates for multi-year contracts because they deliver more predictable revenue over time.\n\n**Payment timing** also matters. Most plans pay monthly or quarterly after deals close. However, deals in long sales cycles can take six to twelve months to finalize. In these situations, companies sometimes use a **draw against commission** — an advance payment that reps repay from future earnings. This keeps reps financially stable during slow periods without reducing the company's accountability expectations.\n\nFinally, plan designers must watch out for **unintended consequences**. When incentives are not balanced carefully, reps find ways to game the system. A classic example: if a company only commissions on new logos, reps may ignore upsell opportunities in existing accounts, leaving significant revenue on the table. Every design choice sends a message about what the company values.\n\nThe best commission plans are both motivating and aligned with business strategy. They reward the right behaviors, set achievable but stretching targets, and remain simple enough for reps to understand without a spreadsheet.",
+    "writing_task": "After reading the article, write **2–3 sentences** in English responding to this question:\n\n**What did you find most interesting about commission plan design, and why does it matter for data science work in revenue operations?**\n\nTo help you, focus on **one specific idea** from the article — for example, the concept of unintended consequences, the role of quota-setting, or the choice of what metric to commission on. Explain what surprised you or what connected to something you already know from your work.\n\nTry to use at least **one vocabulary term** from the Vocabulary Spotlight section below in your response.",
+    "date": "2026-10-26"
   }
 }
