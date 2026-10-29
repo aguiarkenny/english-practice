@@ -1,8 +1,8 @@
 {
   "reading_level": 1,
   "writing_level": 1,
-  "session_count": 84,
-  "last_session_date": "2026-10-28",
+  "session_count": 85,
+  "last_session_date": "2026-10-29",
   "topic_history": [
     {
       "topic": "data science",
@@ -423,6 +423,11 @@
       "topic": "sales compensation",
       "subtopic": "SPIFs and accelerators",
       "date": "2026-10-28"
+    },
+    {
+      "topic": "revenue operations",
+      "subtopic": "lead scoring models",
+      "date": "2026-10-29"
     }
   ],
   "recent_writing_scores": [
@@ -485,11 +490,11 @@
     "3. **Wrong verb form after auxiliary or complement structures** — e.g., \"allows models handling\" instead of \"allows models to handle,\" and \"while uses\" instead of \"while using.\" Student needs reinforcement of infinitive and gerund complement rules in English."
   ],
   "pending_evaluation": {
-    "session_num": 84,
-    "topic": "sales compensation",
-    "subtopic": "SPIFs and accelerators",
-    "article": "**SPIFs and Accelerators: The Short-Game Tools of Sales Compensation**\n\nSales compensation plans are built for the long game — base salaries, annual quotas, and standard commission rates create a stable foundation. But revenue operations teams know that stability alone does not drive urgency. That is where SPIFs and accelerators come in.\n\nA SPIF — Sales Performance Incentive Fund — is a short-term cash bonus or reward designed to motivate reps to push a specific product, close deals in a particular region, or hit a target within a compressed timeframe. Think of it as a tactical injection of energy into a sales cycle. A software company might launch a SPIF to accelerate adoption of a new product module, offering a $500 bonus for every deal that includes it during a single quarter. The goal is behavioral: to shift attention quickly, not to restructure the entire compensation model.\n\nAccelerators work differently, but the underlying logic is similar. An accelerator is a higher commission rate that kicks in once a rep crosses a defined threshold — typically 100% of their quota. For example, a rep earning 8% commission below quota might earn 12% on every dollar sold above it. This structure rewards overperformance and encourages reps to keep selling even after reaching their base target, which is precisely what high-growth companies need during strong pipeline periods.\n\nBoth tools carry real design risks. SPIFs, when overused, can train reps to wait for bonus events before pushing certain products, which actually undermines the predictability that RevOps teams work hard to build. Accelerators, on the other hand, can create earnings volatility that makes financial forecasting difficult. A handful of top performers blowing past 150% of quota can significantly distort projected payroll costs.\n\nThe data supports a balanced approach. According to research published by the Sales Management Association, companies that deploy SPIFs more than four times per year see diminishing returns in rep engagement. Meanwhile, tiered accelerator structures — where rates increase at 100%, 120%, and 150% of quota — tend to produce more predictable overperformance distributions than single-threshold models.\n\nTo design these tools effectively, compensation analysts need to model payout scenarios before launch. Running simulations allows teams to handle unexpected cost spikes before they reach the finance team, not after. It also helps to align SPIF timing with the broader sales calendar, ensuring the incentive supports a genuine business need rather than creating noise in an already complex comp plan.\n\nUsed with discipline, SPIFs and accelerators are not just motivational perks. They are precision instruments — and like any instrument, they reward the people who learn to use them well.",
-    "writing_task": "Write **2–3 sentences** summarizing the main argument of the article. Your summary should answer these three questions:\n\n1. What is the **difference** between a SPIF and an accelerator?\n2. What is the **main risk** of using these tools poorly?\n3. What does the article say companies should do **to design** these tools effectively?\n\nWrite in complete sentences. Use your own words — do not copy directly from the article.",
-    "date": "2026-10-28"
+    "session_num": 85,
+    "topic": "revenue operations",
+    "subtopic": "lead scoring models",
+    "article": "**Lead Scoring Models: Turning Data Into Sales Priority**\n\nNot every lead deserves the same attention. A sales team has limited time, and spending hours on a prospect who will never buy is expensive. This is why lead scoring models have become essential tools in modern revenue operations.\n\nA lead scoring model assigns a numerical score to each prospect. The score reflects how likely that prospect is to become a paying customer. Higher scores go to leads that match your ideal customer profile and show strong buying signals. Lower scores go to leads that are unlikely to convert.\n\nMost companies build their scoring models around two dimensions. The first is **fit**. This measures how closely a lead matches your target customer. Common fit criteria include company size, industry, job title, and geographic location. For example, if you sell enterprise software, a VP of IT at a 500-person manufacturing company scores higher than a freelance consultant.\n\nThe second dimension is **engagement**. This measures how actively a prospect is interacting with your content and brand. Engagement signals include opening emails, visiting pricing pages, downloading whitepapers, or attending webinars. A lead who visits your pricing page three times in one week is sending a very clear signal.\n\nTraditional lead scoring assigned points manually. A marketing team would decide, for instance, that visiting the pricing page was worth 20 points and downloading a PDF was worth 10. This approach works, but it relies heavily on human judgment and can become outdated quickly.\n\nMore advanced companies now use **predictive lead scoring**. Instead of manual rules, machine learning algorithms analyze historical data. They look at thousands of past leads and identify which characteristics were most common among customers who actually converted. The model then applies those patterns to new leads automatically.\n\nThe business impact can be significant. According to research from Salesforce, companies that use AI-driven lead scoring report a 30% increase in lead conversion rates on average. Sales teams spend less time on cold leads and more time on prospects that are ready to buy.\n\nHowever, lead scoring models are not perfect. They require clean, consistent data to function well. If your CRM contains duplicate records, missing fields, or outdated contact information, the model produces unreliable scores. Garbage in, garbage out — this principle applies directly here.\n\nAnother challenge is model drift. Over time, buyer behavior changes. A scoring model built two years ago may no longer reflect how your current customers actually behave. Revenue operations teams must review and recalibrate their models regularly, ideally every six to twelve months.\n\nDone well, lead scoring creates a shared language between marketing and sales. Both teams agree on what a \"good lead\" looks like. That alignment reduces friction and accelerates the entire revenue cycle.",
+    "writing_task": "Write **2–3 sentences** summarizing the main argument of the article.\n\nYour summary should answer these three questions:\n1. **What is** a lead scoring model and what does it do?\n2. **Why is it valuable** for sales and marketing teams?\n3. **What is one important limitation** the article mentions?\n\nUse your own words. Do not copy sentences directly from the text. Try to connect your ideas using linking words such as *however*, *because*, or *which means that*.",
+    "date": "2026-10-29"
   }
 }
