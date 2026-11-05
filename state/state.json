@@ -1,8 +1,8 @@
 {
   "reading_level": 1,
   "writing_level": 1,
-  "session_count": 89,
-  "last_session_date": "2026-11-04",
+  "session_count": 90,
+  "last_session_date": "2026-11-05",
   "topic_history": [
     {
       "topic": "data science",
@@ -448,6 +448,11 @@
       "topic": "revenue operations",
       "subtopic": "CRM data hygiene",
       "date": "2026-11-04"
+    },
+    {
+      "topic": "sales compensation",
+      "subtopic": "commission plan design",
+      "date": "2026-11-05"
     }
   ],
   "recent_writing_scores": [
@@ -510,11 +515,11 @@
     "3. **Wrong verb form after auxiliary or complement structures** — e.g., \"allows models handling\" instead of \"allows models to handle,\" and \"while uses\" instead of \"while using.\" Student needs reinforcement of infinitive and gerund complement rules in English."
   ],
   "pending_evaluation": {
-    "session_num": 89,
-    "topic": "revenue operations",
-    "subtopic": "CRM data hygiene",
-    "article": "**Why Dirty Data Is Costing Your Sales Team More Than You Think**\n\nIn revenue operations, few problems are as expensive as poor CRM data hygiene. A 2022 report by Validity found that organizations lose an average of $12.9 million per year due to bad data. Yet many companies still treat data quality as a secondary concern — something to fix later, after the pipeline grows.\n\nCRM data hygiene refers to the ongoing process of keeping your customer and prospect records accurate, complete, and up to date. This means removing duplicate entries, correcting outdated contact information, and ensuring that fields like deal stage, close date, and account owner are filled in correctly. When these records are messy, the entire revenue engine suffers.\n\nConsider a common real-world scenario. A sales representative updates a deal to \"Closed Won\" but forgets to log the final contract value. The revenue operations team pulls a monthly report, and the numbers look off. The VP of Sales makes decisions based on incomplete data. Forecasts are wrong, compensation calculations are delayed, and trust in the CRM breaks down.\n\nDuplicate records are another major source of pain. When a contact exists twice in the system — perhaps once from a trade show import and once from a web form submission — sales reps may reach out to the same person twice. This damages the customer relationship and creates double counting in reports.\n\nGood data hygiene practices typically follow a cycle. First, teams establish clear data entry standards. For example, they define exactly how company names should be written — \"IBM Corp.\" versus \"IBM\" versus \"International Business Machines.\" Second, automated tools scan for duplicates and flag incomplete records. Platforms like Salesforce, HubSpot, and Outreach all have native or third-party tools that support this. Third, a data steward or RevOps analyst reviews flagged records regularly and resolves conflicts.\n\nThe payoff is real. A clean CRM means sales reps spend less time searching for the right contact and more time selling. Forecasting becomes more reliable. Sales compensation teams can calculate commissions without manual corrections. And leadership can trust the dashboards they use to make strategic decisions.\n\nData hygiene is not a one-time project. It is a discipline — like financial auditing or code review. The companies that treat it seriously gain a measurable competitive advantage in how they manage and grow revenue.",
-    "writing_task": "The article explains what happens when CRM records are incomplete or inaccurate. Think about the scenario where a sales rep forgets to log the final contract value after closing a deal.\n\n**Your task:** Write 2–3 sentences describing *why incomplete deal records are a problem* for the business. Use your own words. Do not copy sentences from the article directly. Try to include at least one cause-and-effect connection in your writing.\n\n**Example structure to guide you:**\n*\"When [something happens], [this causes a problem]. As a result, [another consequence follows].\"*",
-    "date": "2026-11-04"
+    "session_num": 90,
+    "topic": "sales compensation",
+    "subtopic": "commission plan design",
+    "article": "**Commission Plan Design: Building a Structure That Actually Drives Results**\n\nA sales commission plan is more than a payment formula. It is a behavioral tool. The way you design a commission plan directly shapes what your sales team will prioritize — and what they will ignore.\n\nMost companies start with a simple structure: a base salary plus a percentage of revenue closed. For example, a rep might earn a 5% commission on every deal they close. This model is easy to understand and easy to administer. However, simplicity alone does not guarantee alignment with business goals.\n\nOne of the most important design decisions is where to set the quota. A quota is the revenue target assigned to each salesperson. Industry benchmarks suggest that roughly 60% to 70% of reps should be able to hit their quota in a healthy plan. If fewer than half your reps are hitting target, the quota may be too aggressive — or the territory too thin. If nearly everyone hits it easily, the quota is probably too low, and the company is overpaying for expected performance.\n\nAcceleration tiers add another layer of sophistication. These are higher commission rates that activate after a rep hits a certain threshold. For instance, a rep might earn 5% on deals up to 100% of quota, then 8% on every dollar above that. This structure rewards overperformance and motivates top performers to keep selling after they hit their target — rather than sandbagging deals to roll them into the next quarter.\n\nPlan design also needs to address product mix. If a company sells both high-margin software licenses and lower-margin professional services, paying the same commission rate on both sends a confusing signal. Many companies apply a multiplier or a separate rate to incentivize the products they most want to grow.\n\nA common failure in commission design is overcomplication. When a plan has too many components — accelerators, kickers, multipliers, SPIFs, and clawback clauses all at once — reps cannot easily calculate their own earnings. Research from Gartner suggests that reps who cannot predict their pay become less motivated, not more. The best plans are sophisticated enough to drive behavior but simple enough that a rep can explain their own payout in under two minutes.\n\nFinally, plans must be reviewed regularly. Market conditions change. A quota that was appropriate last year may be misaligned today. Best-in-class organizations review their commission structures at least annually and sometimes mid-year when significant market disruptions occur.\n\nThe goal of a well-designed commission plan is alignment: the company's revenue priorities and the individual rep's financial incentives should point in exactly the same direction.",
+    "writing_task": "Choose **one** of the following concepts from the article and write **2–3 sentences** describing it in your own words:\n\n- **Quota attainment benchmarks** (the idea that 60–70% of reps should hit quota)\n- **Acceleration tiers** (how commission rates increase after hitting a threshold)\n\nBe specific. Try to explain *why* this concept matters for a business — not just *what* it is. Use your own words as much as possible. You do not need to copy sentences from the article.\n\n**Example of what to avoid:** *\"Acceleration tiers are higher commission rates that activate after a rep hits a threshold.\"* (This is too close to the original text.)\n\n**Example of a good attempt:** *\"Acceleration tiers help companies reward their best sellers more. When a rep already hit the target, they can earn more money for each extra deal. This makes top performers want to keep working instead of stopping.\"*",
+    "date": "2026-11-05"
   }
 }
