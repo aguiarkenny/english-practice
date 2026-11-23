@@ -1,8 +1,8 @@
 {
   "reading_level": 1,
   "writing_level": 1,
-  "session_count": 101,
-  "last_session_date": "2026-11-20",
+  "session_count": 102,
+  "last_session_date": "2026-11-23",
   "topic_history": [
     {
       "topic": "data science",
@@ -508,6 +508,11 @@
       "topic": "revenue operations",
       "subtopic": "lead scoring models",
       "date": "2026-11-20"
+    },
+    {
+      "topic": "sales compensation",
+      "subtopic": "quota attainment analysis",
+      "date": "2026-11-23"
     }
   ],
   "recent_writing_scores": [
@@ -570,11 +575,11 @@
     "3. **Wrong verb form after auxiliary or complement structures** — e.g., \"allows models handling\" instead of \"allows models to handle,\" and \"while uses\" instead of \"while using.\" Student needs reinforcement of infinitive and gerund complement rules in English."
   ],
   "pending_evaluation": {
-    "session_num": 101,
-    "topic": "revenue operations",
-    "subtopic": "lead scoring models",
-    "article": "**Lead Scoring Models: Turning Data Into Sales Priorities**\n\nEvery sales team faces the same fundamental problem: too many leads, too little time. A sales representative cannot call every prospect with the same energy and urgency. This is where lead scoring models become essential tools in revenue operations.\n\nA lead scoring model assigns a numerical value to each lead based on specific criteria. These criteria typically fall into two categories: demographic fit and behavioral signals. Demographic fit includes factors such as company size, industry, and job title. Behavioral signals include actions like opening emails, visiting pricing pages, or attending a webinar. When combined, these two dimensions give sales teams a clearer picture of which leads are most likely to convert.\n\nIn practice, most organizations use a points-based system. For example, a lead who works at a mid-sized technology company might receive 20 points for firmographic fit. If that same person downloads a product comparison guide, they earn another 15 points. If they then request a demo, they earn 30 more points. Once a lead crosses a threshold — say, 60 points — the model flags them as \"sales-qualified\" and routes them to a representative.\n\nHowever, traditional points-based models have a significant weakness: the weights are often assigned based on intuition rather than data. A revenue operations team might assume that visiting the pricing page is highly predictive of purchase intent, but historical data could tell a very different story. This is why many organizations are moving toward machine learning-based scoring models. These models analyze patterns in closed-won deals from the past and automatically identify which variables were actually predictive of conversion.\n\nOne real-world example illustrates this shift clearly. A B2B software company using a traditional model was prioritizing leads based on company size and email engagement. After building a logistic regression model on 18 months of CRM data, they discovered that the single strongest predictor of conversion was attending a live product demonstration — not company size or email opens. They restructured their entire outreach strategy around this insight.\n\nThere are also important limitations to acknowledge. Lead scoring models can inherit historical bias. If past sales focused only on certain industries, the model will deprioritize leads from other sectors, even if those sectors represent real growth opportunities. Regular model audits are therefore not optional — they are a business necessity.\n\nFor revenue operations professionals, the goal is not to build a perfect model. The goal is to build a model that is better than random prioritization and that improves over time with new data. Even a modest improvement in lead prioritization can produce measurable gains in sales efficiency and pipeline conversion rates.",
-    "writing_task": "Read the article carefully. Then write **2–3 sentences** that summarize the main argument.\n\nYour sentences should answer these questions:\n- **What is a lead scoring model and why does companies use it?**\n- **What is one important problem with traditional models?**\n\nTry to use your own words. Do not copy sentences directly from the article. Keep your sentences short and clear.",
-    "date": "2026-11-20"
+    "session_num": 102,
+    "topic": "sales compensation",
+    "subtopic": "quota attainment analysis",
+    "article": "**When Quota Attainment Lies to You: Reading the Numbers More Carefully**\n\nQuota attainment is one of the most common metrics in sales compensation. On the surface, it looks simple: divide a rep's actual revenue by their assigned quota, and you get a percentage. If a rep closes $900,000 against a $1,000,000 quota, their attainment is 90%. Simple, right?\n\nNot quite. In practice, quota attainment data can tell very different stories depending on how you read it.\n\nConsider a sales team where 75% of reps hit their quota in Q3. Leadership might celebrate this result. After all, three out of four reps performed well. But a data scientist looking more carefully might ask: what was the distribution of attainment? If most reps landed between 95% and 105%, the team is performing consistently. But if half the reps are at 130% and the other half are below 60%, the average hides a serious problem. The quota-setting process may be broken.\n\nThis is called **attainment distribution analysis**, and it is one of the most useful tools in revenue operations. Instead of only tracking whether reps hit quota, you study the full curve of outcomes. A healthy distribution typically looks like a bell curve centered near 100%. A skewed or bimodal distribution often signals that quotas were set without enough data, or that territory assignments are unequal.\n\nAnother important concept is **pay-for-performance alignment**. Compensation plans are designed with the assumption that hitting quota means earning the target commission. But if too many reps consistently exceed quota by large margins, the company is likely underpaying top performers. Conversely, if reps consistently fall short, the plan may be demotivating rather than driving behavior.\n\nA real-world example: a software company analyzed two years of attainment data and found that enterprise reps in the Northeast region consistently hit 140% of quota, while reps in the Midwest averaged 68%. The quotas had been set using national averages without adjusting for market size or existing account penetration. The fix was not to reduce enterprise rep pay. It was to recalibrate quotas using regional data.\n\nThis kind of analysis requires combining compensation data with pipeline data, territory maps, and historical close rates. It is exactly the intersection where data science and revenue operations meet.\n\nThe key takeaway is this: quota attainment is a signal, not a verdict. High attainment can mean strong performance — or it can mean quotas were set too low. Low attainment can mean poor execution — or unfair territory design. Your job as an analyst is to separate the signal from the noise.",
+    "writing_task": "Write **2–3 sentences** summarizing the main argument of the article.\n\nYour sentences should answer these two questions:\n- What is the problem with reading quota attainment as a simple number?\n- What should analysts do instead?\n\nUse your own words. Do not copy sentences directly from the article. Try to include at least one of these phrases: *\"the article argues that\"* or *\"according to the author.\"*",
+    "date": "2026-11-23"
   }
 }
