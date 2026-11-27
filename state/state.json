@@ -1,8 +1,8 @@
 {
   "reading_level": 1,
   "writing_level": 1,
-  "session_count": 105,
-  "last_session_date": "2026-11-26",
+  "session_count": 106,
+  "last_session_date": "2026-11-27",
   "topic_history": [
     {
       "topic": "data science",
@@ -528,6 +528,11 @@
       "topic": "revenue operations",
       "subtopic": "CRM data hygiene",
       "date": "2026-11-26"
+    },
+    {
+      "topic": "sales compensation",
+      "subtopic": "commission plan design",
+      "date": "2026-11-27"
     }
   ],
   "recent_writing_scores": [
@@ -590,11 +595,11 @@
     "3. **Wrong verb form after auxiliary or complement structures** — e.g., \"allows models handling\" instead of \"allows models to handle,\" and \"while uses\" instead of \"while using.\" Student needs reinforcement of infinitive and gerund complement rules in English."
   ],
   "pending_evaluation": {
-    "session_num": 105,
-    "topic": "revenue operations",
-    "subtopic": "CRM data hygiene",
-    "article": "**The Hidden Cost of Dirty Data: Why CRM Hygiene Is a Revenue Problem**\n\nMost sales leaders understand that a CRM system is only as useful as the data inside it. Yet in practice, CRM data hygiene — the ongoing process of keeping records accurate, complete, and consistent — is one of the most neglected disciplines in revenue operations. The consequences are rarely invisible for long.\n\nConsider a mid-sized SaaS company with 200 sales representatives. If just 20% of their account records contain outdated contact information, duplicate entries, or missing fields, the downstream effects multiply quickly. Marketing campaigns reach the wrong people. Sales reps waste time chasing dead leads. Commission calculations become unreliable, which creates disputes that erode trust between finance and sales. A 2023 Gartner study estimated that poor data quality costs organizations an average of $12.9 million per year. That number is hard to ignore.\n\nSo what does good CRM hygiene actually look like in practice? It starts with standardization. Fields such as industry classification, company size, and deal stage must follow consistent naming conventions. When one rep types \"Financial Services\" and another types \"FinServ,\" the data becomes difficult to aggregate and nearly impossible to use in automated workflows.\n\nDeduplication is the next critical step. Duplicate records distort pipeline reporting and can cause the same customer to receive multiple outreach attempts, which damages the brand experience. Modern CRM platforms offer automated deduplication tools, but these tools require clear matching rules — usually based on email domain, company name, and phone number — to work reliably.\n\nValidation rules are equally important. A CRM without mandatory fields is an invitation to skip data entry entirely. To reduce incomplete records, revenue operations teams typically enforce required fields at key pipeline stages. For example, a deal cannot advance to \"Proposal Sent\" unless the primary contact email and expected close date are filled in. This approach creates a natural checkpoint without slowing reps down unnecessarily.\n\nFinally, hygiene is not a one-time project. It requires a governance model: a designated data owner, a regular audit schedule, and clear ownership rules for shared accounts. Some organizations run quarterly data audits, scoring each record on completeness and accuracy. Teams that treat hygiene as a continuous process — rather than a cleanup sprint — tend to see compounding improvements over time.\n\nThe business case is straightforward. Clean data allows forecasting models to handle larger pipelines with greater precision. It also allows leadership to make decisions based on reality, not on a distorted picture built from inconsistent inputs. In revenue operations, data hygiene is not a back-office concern. It is a strategic asset.",
-    "writing_task": "Write **2–3 sentences** summarizing the main argument of the article.\n\nYour summary should answer these three questions:\n1. **What problem** does the article describe? (Think about what happens when CRM data is poor.)\n2. **What solutions** does the article recommend? (Mention at least two specific practices.)\n3. **Why does it matter** for the business? (Use a concrete consequence or benefit from the text.)\n\n**Helpful sentence starters to try:**\n- *\"The article argues that...\"*\n- *\"To improve data quality, revenue operations teams should...\"*\n- *\"When CRM records are clean, companies can...\"*\n\n**Grammar reminder:** Every sentence needs a subject. Before you submit, check each sentence and ask yourself: *who or what is performing the action?* Make sure no verb is left without a subject.",
-    "date": "2026-11-26"
+    "session_num": 106,
+    "topic": "sales compensation",
+    "subtopic": "commission plan design",
+    "article": "**Commission Plan Design: Why Simplicity Often Beats Sophistication**\n\nMany sales organizations fall into the same trap. They build commission plans that are technically elegant but practically confusing. The result? Sales reps spend more time calculating their potential earnings than actually selling.\n\nGood commission plan design starts with one question: what behavior do you want to drive? If the answer is \"close more deals,\" then the plan should reward closed deals — clearly, directly, and without too many conditions. Every time you add a modifier, an accelerator tier, or a product-specific multiplier, you create cognitive load for the sales team. Research from the Alexander Group, a sales consulting firm, suggests that reps who cannot explain their own compensation plan in two minutes are significantly less motivated by it.\n\nConsider a mid-sized SaaS company with three revenue segments: new business, renewals, and upsell. A common mistake is to assign different commission rates to each segment without explaining the strategic logic. If renewals pay 3% and new business pays 8%, reps will naturally prioritize new business — even when the company's actual retention problem is more urgent. Commission rates send signals. Sales leaders need to design those signals intentionally.\n\nQuota attainment thresholds are another critical design decision. Most plans pay nothing below 50% of quota, then apply a standard rate from 50% to 100%, and then accelerate above 100%. This \"three-zone\" structure is widely used because it protects company margin while still motivating reps across different performance levels. However, the threshold percentages must reflect realistic expectations. Setting the floor too high discourages underperformers before they can recover. Setting it too low removes urgency.\n\nTiming also matters. Plans paid monthly create more frequent feedback loops than plans paid quarterly. For early-stage companies or new sales hires, monthly payouts can reinforce positive selling habits faster. For enterprise sales teams with longer deal cycles, quarterly payouts may better match the rhythm of the business.\n\nFinally, commission plans must be documented in plain language. Legal precision is important, but clarity is essential. If a rep needs to ask their manager how to interpret a clause every time they close a deal, the plan is not working. Some companies now publish short video explainers alongside written plan documents. This combination reduces confusion and builds trust with the sales team.\n\nThe best commission plans are not the most complex ones. They are the ones that make the right behavior obvious, predictable, and rewarding.",
+    "writing_task": "Write **2–3 sentences** summarizing the main argument of the article.\n\nYour sentences should answer these questions:\n- What is the central problem the article describes?\n- What solution or principle does the author recommend?\n- What is one example or detail from the article that supports this idea?\n\nUse your own words as much as possible. You do not need to use all five vocabulary terms below, but try to use at least one.",
+    "date": "2026-11-27"
   }
 }
